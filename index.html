@@ -1,19 +1,20 @@
 
 <section id="home" class="hero-alpha">
+
   <div class="hero-alpha-inner">
 
+    <!-- PROFILE IMAGE -->
     <div class="hero-alpha-photo">
       <img
         src="majid-roshan.jpg.png"
-        alt="Majid Roshan – Founder and HSE 5.0 Visionary"
+        alt="Majid Roshan - Founder and HSE 5.0 Visionary"
         fetchpriority="high"
       />
-      <div class="photo-caption">
-        FOUNDER · HSE 5.0 VISIONARY
-      </div>
     </div>
 
+    <!-- PROFESSIONAL INTRODUCTION -->
     <div class="hero-alpha-content">
+
       <div class="hero-eyebrow">
         INDUSTRIAL HSE · RISK · RESILIENCE · AI
       </div>
@@ -33,70 +34,103 @@
       </p>
 
       <div class="hero-actions">
+
         <a href="#hse50" class="hero-btn primary">
           Explore HSE 5.0
         </a>
+
         <a href="#expertise" class="hero-btn secondary">
           Professional Expertise
         </a>
+
       </div>
 
       <div class="hero-signature">
         LEADERSHIP · INNOVATION · RESILIENCE
       </div>
+
     </div>
 
   </div>
+
 </section>
 
+
 <style>
+
+/* =================================
+   MAJID ROSHAN - HERO SECTION
+   HSE 5.0 PROFESSIONAL WEBSITE
+================================= */
+
+.hero-alpha,
+.hero-alpha * {
+  box-sizing: border-box;
+}
+
 .hero-alpha {
+  width: 100%;
   background: #07182b;
   color: #ffffff;
   padding: 65px 5%;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* MAIN LAYOUT */
+
 .hero-alpha-inner {
-  max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns: 0.72fr 1.28fr;
+
+  grid-template-columns:
+    minmax(240px, 320px)
+    minmax(0, 1fr);
+
   align-items: center;
-  gap: 45px;
+  gap: clamp(30px, 5vw, 65px);
 }
+
+/* PROFILE IMAGE */
 
 .hero-alpha-photo {
   position: relative;
-  max-width: 300px;
   width: 100%;
-  margin: auto;
+  max-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 14px;
 }
 
 .hero-alpha-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 16px;
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  height: auto !important;
+  max-height: none !important;
+
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+
+  border-radius: 14px;
+
   border: 1px solid rgba(91, 211, 139, 0.45);
-  box-shadow: 0 20px 45px rgba(0,0,0,.35);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
-.photo-caption {
-  position: absolute;
-  bottom: 12px;
-  left: 10px;
-  right: 10px;
-  text-align: center;
-  background: rgba(5, 23, 39, .88);
-  color: #65d68c;
-  padding: 11px 6px;
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  border-radius: 6px;
+/* TEXT CONTENT */
+
+.hero-alpha-content {
+  width: 100%;
+  min-width: 0;
 }
 
 .hero-eyebrow {
@@ -104,103 +138,160 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
+  line-height: 1.8;
   margin-bottom: 22px;
 }
 
-.hero-alpha-content {
-  min-width: 0;
-}
-
 .hero-alpha-content h1 {
-  font-size: clamp(38px, 5vw, 64px);
-  line-height: 1.08;
-  margin: 0 0 18px;
   color: #ffffff;
+  font-size: clamp(38px, 5vw, 66px);
   font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 18px;
+  overflow-wrap: anywhere;
 }
 
 .hero-alpha-content h2 {
   color: #62d58b;
-  font-size: clamp(21px, 2.5vw, 29px);
-  line-height: 1.4;
-  margin: 0 0 12px;
+  font-size: clamp(21px, 2.6vw, 30px);
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0 0 14px;
 }
 
 .hero-alpha-content h3 {
-  font-size: 16px;
-  line-height: 1.7;
   color: #d4dfeb;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1.8;
+  margin: 0;
 }
 
 .hero-alpha-content p {
-  max-width: 620px;
+  max-width: 650px;
   color: #bdcad8;
   font-size: 16px;
   line-height: 1.9;
-  margin: 22px 0 28px;
+  margin: 24px 0 30px;
 }
+
+/* ACTION BUTTONS */
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 13px;
 }
 
 .hero-btn {
-  display: inline-block;
-  padding: 14px 23px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 46px;
+  padding: 13px 22px;
+
   border-radius: 5px;
   text-decoration: none;
+
   font-size: 13px;
   font-weight: 700;
-  transition: .25s ease;
+
+  transition: all 0.25s ease;
 }
 
 .hero-btn.primary {
   background: #168b50;
   color: #ffffff;
+  border: 1px solid #168b50;
 }
 
 .hero-btn.secondary {
-  border: 1px solid #6bd794;
+  background: transparent;
   color: #ffffff;
+  border: 1px solid #6bd794;
 }
 
 .hero-btn:hover {
   transform: translateY(-3px);
-  opacity: .9;
+  opacity: 0.9;
 }
+
+/* PROFESSIONAL SIGNATURE */
 
 .hero-signature {
   color: #6bd794;
   font-size: 10px;
+  font-weight: 600;
   letter-spacing: 2px;
+  line-height: 2;
   margin-top: 32px;
 }
 
-@media (max-width: 768px) {
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .hero-alpha {
+    padding: 50px 4%;
+  }
+
+  .hero-alpha-inner {
+    grid-template-columns:
+      minmax(210px, 280px)
+      minmax(0, 1fr);
+
+    gap: 30px;
+  }
+
+  .hero-alpha-content h1 {
+    font-size: 42px;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
   .hero-alpha {
     padding: 40px 20px;
   }
 
   .hero-alpha-inner {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 32px;
   }
 
   .hero-alpha-photo {
-    max-width: 260px;
+    max-width: 280px;
   }
 
   .hero-alpha-content {
     text-align: center;
   }
 
+  .hero-alpha-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-alpha-content h2 {
+    font-size: 23px;
+  }
+
+  .hero-alpha-content h3 {
+    font-size: 15px;
+  }
+
   .hero-alpha-content p {
     font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto 26px;
+  }
+
+  .hero-eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.3px;
   }
 
   .hero-actions {
@@ -208,7 +299,10 @@
   }
 
   .hero-signature {
-    line-height: 2;
+    font-size: 9px;
+    margin-top: 28px;
   }
+
 }
+
 </style>
