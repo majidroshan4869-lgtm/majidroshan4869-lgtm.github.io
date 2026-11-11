@@ -2,482 +2,502 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Official professional portfolio of Majid Roshan, Senior HSE Leader, Strategic Consultant, Author and Founder of the HSE 5.0 Vision.">
-<meta name="author" content="Majid Roshan">
-<title>Majid Roshan | HSE 5.0 Visionary</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Majid Roshan - Senior HSE Leader, Strategic Consultant, Author and Founder of the HSE 5.0 vision.">
+  <meta name="keywords" content="Majid Roshan, HSE 5.0, Predictive Safety, Industrial HSE, Global HSE 5.0">
+  <meta name="author" content="Majid Roshan">
+  <title>Majid Roshan | HSE 5.0 Visionary</title>
 
-<style>
-:root {
-  --navy: #0b1830;
-  --navy2: #132746;
-  --green: #21a477;
-  --white: #ffffff;
-  --light: #f3f6f8;
-  --text: #25364a;
-  --muted: #aab8c8;
-}
+  <style>
+    :root {
+      --navy: #0b1830;
+      --navy-light: #142947;
+      --green: #39b982;
+      --white: #ffffff;
+      --muted: #b8c5d5;
+      --red: #d95d5d;
+    }
 
-* { margin:0; padding:0; box-sizing:border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-html { scroll-behavior:smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color:var(--text);
-  line-height:1.7;
-  background:var(--white);
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.7;
+    }
 
-a { text-decoration:none; color:inherit; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-header {
-  background:var(--navy);
-  color:white;
-  padding:20px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:15px;
-  border-bottom:1px solid #263a55;
-}
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
 
-.logo {
-  font-size:20px;
-  font-weight:bold;
-  letter-spacing:1px;
-}
+    header {
+      background: rgba(11, 24, 48, 0.96);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-.logo span { color:#36c995; }
+    nav {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-nav { display:flex; flex-wrap:wrap; gap:22px; }
+    .brand {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
 
-nav a {
-  color:#d8e2ee;
-  font-size:13px;
-  transition:.3s;
-}
+    .brand span {
+      color: var(--green);
+    }
 
-nav a:hover { color:#36c995; }
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--muted);
+    }
 
-.hero {
-  min-height:570px;
-  background:linear-gradient(115deg,#0b1830 0%,#142d4d 70%,#155b50 120%);
-  color:white;
-  padding:110px 10%;
-  display:flex;
-  align-items:center;
-}
+    .nav-links a:hover {
+      color: var(--green);
+    }
 
-.hero-content { max-width:850px; }
+    .hero {
+      padding: 110px 0 95px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(57,185,130,.15), transparent 30%),
+        linear-gradient(135deg, #0b1830, #142947);
+    }
 
-.eyebrow {
-  color:#48d4a1;
-  letter-spacing:3px;
-  font-size:13px;
-  font-weight:bold;
-  margin-bottom:22px;
-}
+    .eyebrow {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
-h1 {
-  font-size:clamp(38px,6vw,65px);
-  line-height:1.12;
-  margin-bottom:22px;
-  letter-spacing:-1px;
-}
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.12;
+      margin-bottom: 22px;
+    }
 
-.hero h2 {
-  color:#b8cadd;
-  font-size:21px;
-  font-weight:400;
-  margin-bottom:20px;
-}
+    .hero h2 {
+      font-size: clamp(17px, 3vw, 25px);
+      color: var(--muted);
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
 
-.hero p {
-  color:#d2dce8;
-  max-width:700px;
-  font-size:16px;
-  margin-bottom:32px;
-}
+    .hero p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 16px;
+    }
 
-.btn {
-  display:inline-block;
-  padding:13px 25px;
-  background:var(--green);
-  color:white;
-  border-radius:4px;
-  font-weight:bold;
-  font-size:14px;
-  transition:.3s;
-}
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
 
-.btn:hover { background:#16845f; }
+    .btn {
+      display: inline-block;
+      padding: 12px 23px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: .2s;
+    }
 
-.btn-outline {
-  border:1px solid #9db0c5;
-  background:transparent;
-  margin-left:10px;
-}
+    .btn-primary {
+      background: var(--green);
+      color: #071a17;
+    }
 
-.btn-outline:hover { background:#ffffff18; }
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.35);
+      color: var(--white);
+    }
 
-section { padding:85px 10%; }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
-.section-title {
-  color:var(--navy);
-  font-size:32px;
-  margin-bottom:12px;
-}
+    section {
+      padding: 80px 0;
+    }
 
-.section-line {
-  width:65px;
-  height:4px;
-  background:var(--green);
-  margin-bottom:30px;
-}
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
 
-.intro {
-  max-width:850px;
-  color:#566579;
-  font-size:16px;
-}
+    .section-subtitle {
+      color: var(--green);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
 
-.dark {
-  background:var(--navy);
-  color:white;
-}
+    .description {
+      max-width: 850px;
+      color: var(--muted);
+    }
 
-.dark .section-title { color:white; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
 
-.dark .intro { color:#c1cedc; }
+    .card {
+      background: var(--navy-light);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 9px;
+      padding: 27px;
+    }
 
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:22px;
-  margin-top:35px;
-}
+    .card h3 {
+      color: var(--green);
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
 
-.card {
-  background:white;
-  padding:28px;
-  border:1px solid #e5ebf0;
-  border-radius:7px;
-  box-shadow:0 8px 25px #0b18300a;
-}
+    .card p, .card li {
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-.card h3 {
-  color:var(--navy);
-  font-size:19px;
-  margin-bottom:12px;
-}
+    .card ul {
+      padding-left: 19px;
+    }
 
-.card p {
-  color:#64748b;
-  font-size:14px;
-}
+    .highlight {
+      border-left: 3px solid var(--green);
+      padding: 18px 22px;
+      margin-top: 28px;
+      background: rgba(57,185,130,.07);
+      color: var(--muted);
+    }
 
-.dark .card {
-  background:#142844;
-  border:1px solid #29415e;
-}
+    .experience-list {
+      margin-top: 25px;
+      display: grid;
+      gap: 16px;
+    }
 
-.dark .card h3 { color:#43d1a0; }
+    .experience-item {
+      padding: 20px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
 
-.dark .card p { color:#c0cede; }
+    .experience-item h3 {
+      color: var(--white);
+      margin-bottom: 7px;
+    }
 
-.highlight {
-  color:#36c995;
-  font-weight:bold;
-}
+    .experience-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-.tag {
-  display:inline-block;
-  background:#e6f5ef;
-  color:#167957;
-  padding:6px 12px;
-  border-radius:3px;
-  font-size:12px;
-  margin:5px 4px 5px 0;
-}
+    .contact {
+      background: #081426;
+      text-align: center;
+    }
 
-.publication {
-  border-left:3px solid var(--green);
-  padding:15px 22px;
-  margin:22px 0;
-  background:#f6f8fa;
-}
+    .contact p {
+      color: var(--muted);
+      margin: 15px auto 25px;
+      max-width: 650px;
+    }
 
-.publication h3 { color:var(--navy); }
+    footer {
+      padding: 25px 0;
+      text-align: center;
+      color: #91a1b6;
+      font-size: 12px;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
 
-.publication p { color:#64748b; font-size:14px; }
+    footer span {
+      color: var(--green);
+    }
 
-.contact {
-  background:#f3f6f8;
-  text-align:center;
-}
+    @media (max-width: 650px) {
+      nav {
+        padding: 15px 0;
+      }
 
-.contact .intro { margin:auto; }
+      .nav-links {
+        gap: 12px;
+      }
 
-footer {
-  background:#071224;
-  color:#aab8c8;
-  padding:28px 10%;
-  text-align:center;
-  font-size:13px;
-}
+      .hero {
+        padding: 75px 0;
+      }
 
-footer span { color:#36c995; }
-
-@media(max-width:700px) {
-  header { padding:20px 6%; }
-  nav { gap:12px; }
-  nav a { font-size:12px; }
-  .hero { padding:85px 7%; min-height:500px; }
-  section { padding:65px 7%; }
-  .btn-outline { margin:12px 0 0; }
-}
-</style>
+      section {
+        padding: 60px 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">MAJID <span>ROSHAN</span></div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#vision">HSE 5.0</a>
-    <a href="#company">Company</a>
-    <a href="#expertise">Expertise</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">MAJID <span>ROSHAN</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#vision">HSE 5.0</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-<section class="hero">
-  <div class="hero-content">
-    <div class="eyebrow">INDUSTRIAL HSE | STRATEGIC LEADERSHIP | INNOVATION</div>
-
-    <h1>MAJID ROSHAN</h1>
-
-    <h2>Founder & HSE 5.0 Visionary</h2>
-
-    <p>
-      Senior HSE Leader, Strategic Consultant and Author,
-      advancing the future of Health, Safety and Environment
-      through predictive intelligence, human-centered systems,
-      digital transformation and organizational resilience.
-    </p>
-
-    <a href="#vision" class="btn">Explore HSE 5.0</a>
-    <a href="#about" class="btn btn-outline">Discover My Profile</a>
-  </div>
-</section>
-
-<section id="about">
-  <h2 class="section-title">About Majid Roshan</h2>
-  <div class="section-line"></div>
-
-  <p class="intro">
-    Majid Roshan is a senior HSE professional, strategic consultant
-    and author with extensive experience in industrial safety,
-    high-risk operations, steelmaking, direct reduction plants,
-    construction, commissioning and operational HSE management.
-
-    His professional vision focuses on transforming traditional
-    safety management into intelligent, predictive, integrated
-    and human-centered systems.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Industrial Experience</h3>
-      <p>HSE leadership across major industrial development,
-      construction, commissioning and operational environments.</p>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="eyebrow">Industrial HSE • Risk • Resilience • Innovation</div>
+      <h1>Majid Roshan</h1>
+      <h2>Senior HSE Leader | Strategic Consultant | Author</h2>
+      <p>
+        Founder and visionary behind HSE 5.0 — advancing the evolution
+        of occupational health, safety and environmental management
+        toward predictive, human-centric, connected and adaptive systems.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#vision">Explore HSE 5.0</a>
+        <a class="btn btn-outline" href="#contact">Professional Contact</a>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Strategic Leadership</h3>
-      <p>Developing organizational HSE strategies, risk governance,
-      critical control systems and operational resilience.</p>
+  <section id="about">
+    <div class="container">
+      <div class="eyebrow">Professional Profile</div>
+      <h2 class="section-title">About Majid Roshan</h2>
+      <p class="description">
+        An HSE professional, strategic consultant and author with extensive
+        experience in industrial projects, steelmaking, direct reduced iron
+        operations, construction, commissioning and operational safety.
+        His professional focus includes high-risk industries, organizational
+        resilience, risk governance and the development of predictive HSE systems.
+      </p>
+      <div class="highlight">
+        My professional vision: moving beyond reactive safety toward
+        intelligent, predictive and human-centred HSE management.
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Research & Innovation</h3>
-      <p>Developing new approaches to predictive safety,
-      AI-enabled HSE and future-oriented safety management.</p>
+  <section id="vision">
+    <div class="container">
+      <div class="eyebrow">The Future of Safety</div>
+      <h2 class="section-title">HSE 5.0</h2>
+      <p class="description">
+        HSE 5.0 is a forward-looking vision and framework for transforming
+        traditional HSE management into an integrated system that combines
+        human expertise, artificial intelligence, connected technologies,
+        predictive intelligence and organizational resilience.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Predictive Safety</h3>
+          <p>Identifying emerging risks and weak signals before incidents occur.</p>
+        </div>
+        <div class="card">
+          <h3>Human-Centric HSE</h3>
+          <p>Keeping people, participation, competence and human dignity at the centre.</p>
+        </div>
+        <div class="card">
+          <h3>Connected Intelligence</h3>
+          <p>Connecting people, processes, operational data and intelligent technologies.</p>
+        </div>
+        <div class="card">
+          <h3>Adaptive Resilience</h3>
+          <p>Strengthening organizational capacity to anticipate, respond and recover.</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        From Reactive Safety to Predictive, Human-Centric, Connected
+        and Autonomous Safety.
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="vision" class="dark">
-  <h2 class="section-title">HSE 5.0 Vision</h2>
-  <div class="section-line"></div>
-
-  <p class="intro">
-    HSE 5.0 represents a strategic vision for the next generation
-    of Health, Safety and Environment management.
-
-    It moves beyond reactive and conventional preventive approaches
-    toward predictive, human-centric, connected and increasingly
-    autonomous safety systems.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Predictive Safety</h3>
-      <p>Anticipating emerging risks through data intelligence,
-      early-warning indicators and predictive analytics.</p>
+  <section id="company">
+    <div class="container">
+      <div class="eyebrow">Global Initiative</div>
+      <h2 class="section-title">Global HSE 5.0 Company</h2>
+      <p class="description">
+        An initiative focused on developing the global framework,
+        architecture, protocols and professional knowledge base
+        for the establishment and implementation of HSE 5.0.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Global Framework</h3>
+          <p>Developing structured principles and implementation guidance for HSE 5.0.</p>
+        </div>
+        <div class="card">
+          <h3>Strategic Development</h3>
+          <p>Building a foundation for future professional services, research and solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Knowledge & Innovation</h3>
+          <p>Connecting HSE expertise with emerging technologies and global practices.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Human-Centric HSE</h3>
-      <p>Keeping human dignity, participation, competency
-      and decision-making at the center of safety systems.</p>
+  <section id="experience">
+    <div class="container">
+      <div class="eyebrow">Industrial Background</div>
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div class="experience-list">
+        <div class="experience-item">
+          <h3>Steelmaking Furnace Projects</h3>
+          <p>
+            HSE involvement in construction, commissioning and operation
+            of steelmaking furnaces 7, 8 and 9 at Mobarakeh Steel Complex.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Direct Reduced Iron (DRI) Projects</h3>
+          <p>
+            HSE involvement across five DRI units at Mobarakeh Steel
+            and Saba Steel complexes, covering project development,
+            commissioning and operations.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Industrial Development Projects</h3>
+          <p>
+            HSE experience across development projects at Mobarakeh Steel
+            Complex during 1373–1403 in the Iranian calendar.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>HSE Auditing & Management Systems</h3>
+          <p>
+            Advanced HSE Lead Auditor background and ISO 45001
+            and ISO 14001 auditing qualifications.
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Connected Intelligence</h3>
-      <p>Integrating people, processes, technologies,
-      operational data and organizational knowledge.</p>
+  <section id="publications">
+    <div class="container">
+      <div class="eyebrow">Research & Publications</div>
+      <h2 class="section-title">Selected Works</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>HSE 5.0 – The Future of Safety</h3>
+          <p>
+            From Reactive Safety to Predictive, Human-Centric,
+            Connected and Autonomous Safety.
+          </p>
+          <p style="margin-top:12px;">2026</p>
+        </div>
+        <div class="card">
+          <h3>Predictive HSE with AI</h3>
+          <p>
+            Exploring artificial intelligence, risk intelligence
+            and predictive approaches in HSE management.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Community-Based Pipeline HSE</h3>
+          <p>
+            A strategic approach to community participation,
+            pipeline risk management and emergency resilience.
+          </p>
+        </div>
+        <div class="card">
+          <h3>HSE 5.0 in High-Risk Industries</h3>
+          <p>
+            Applying the HSE 5.0 vision to complex industrial
+            environments and critical operations.
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Autonomous Capabilities</h3>
-      <p>Developing intelligent systems that support
-      early detection, informed intervention and adaptive response.</p>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="eyebrow">Connect Professionally</div>
+      <h2 class="section-title">Let's Build the Future of Safety</h2>
+      <p>
+        Open to professional dialogue, strategic collaboration,
+        research partnerships and international HSE initiatives.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary"
+           href="https://www.linkedin.com/"
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a class="btn btn-outline"
+           href="https://github.com/majidroshan4869-lgtm"
+           target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </div>
     </div>
-  </div>
-</section>
-
-<section id="company">
-  <h2 class="section-title">Global HSE 5.0 Company</h2>
-  <div class="section-line"></div>
-
-  <p class="intro">
-    Global HSE 5.0 Company is the professional platform associated
-    with the development and advancement of the HSE 5.0 vision.
-
-    Its strategic direction is to support organizations in
-    understanding, designing and implementing next-generation
-    HSE management frameworks.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Global Framework</h3>
-      <p>Strategic architecture and implementation guidance
-      for HSE 5.0 transformation.</p>
-    </div>
-
-    <div class="card">
-      <h3>Consulting & Advisory</h3>
-      <p>Strategic HSE consulting, organizational assessment
-      and transformation roadmaps.</p>
-    </div>
-
-    <div class="card">
-      <h3>Digital & AI-HSE</h3>
-      <p>Exploring artificial intelligence, predictive analytics
-      and connected safety ecosystems.</p>
-    </div>
-  </div>
-</section>
-
-<section id="expertise" class="dark">
-  <h2 class="section-title">Professional Expertise</h2>
-  <div class="section-line"></div>
-
-  <p class="intro">
-    Professional focus areas and specialized capabilities:
-  </p>
-
-  <div style="margin-top:25px">
-    <span class="tag">Industrial HSE Management</span>
-    <span class="tag">HSE Leadership</span>
-    <span class="tag">Risk Management</span>
-    <span class="tag">Process Safety</span>
-    <span class="tag">Crisis Management</span>
-    <span class="tag">Organizational Resilience</span>
-    <span class="tag">ISO 45001</span>
-    <span class="tag">ISO 14001</span>
-    <span class="tag">HSE Auditing</span>
-    <span class="tag">Predictive HSE</span>
-    <span class="tag">AI in Safety</span>
-    <span class="tag">Digital Transformation</span>
-    <span class="tag">Steel Industry</span>
-    <span class="tag">Construction & Commissioning</span>
-  </div>
-</section>
-
-<section id="publications">
-  <h2 class="section-title">Publications & Research</h2>
-  <div class="section-line"></div>
-
-  <div class="publication">
-    <h3>HSE 5.0 – The Future of Safety</h3>
-    <p>
-      From Reactive Safety to Predictive, Human-Centric,
-      Connected and Autonomous Safety.
-    </p>
-    <p><strong>Author:</strong> Majid Roshan | 2026</p>
-  </div>
-
-  <div class="publication">
-    <h3>Predictive HSE Management with Artificial Intelligence</h3>
-    <p>
-      Exploring the transition from traditional safety management
-      to intelligent and predictive HSE systems.
-    </p>
-  </div>
-
-  <div class="publication">
-    <h3>Community-Based HSE in Oil & Gas Pipelines</h3>
-    <p>
-      A strategic approach to integrated community participation,
-      pipeline risk management and national resilience.
-    </p>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <h2 class="section-title">Professional Contact</h2>
-  <div class="section-line" style="margin-left:auto;margin-right:auto"></div>
-
-  <p class="intro">
-    For professional collaboration, strategic consulting,
-    research partnerships and international opportunities,
-    connect with Majid Roshan.
-  </p>
-
-  <div style="margin-top:30px">
-    <a class="btn"
-       href="https://www.linkedin.com/"
-       target="_blank"
-       rel="noopener noreferrer">
-       LinkedIn
-    </a>
-
-    <a class="btn btn-outline"
-       style="color:#17304b;border-color:#17304b"
-       href="https://github.com/majidroshan4869-lgtm"
-       target="_blank"
-       rel="noopener noreferrer">
-       GitHub
-    </a>
-  </div>
-</section>
+  </section>
 
 </main>
 
 <footer>
-  <p>© 2026 <span>Majid Roshan</span>. All Rights Reserved.</p>
-  <p>Founder & HSE 5.0 Visionary | Global HSE 5.0 Company</p>
-  <p>From Reactive Safety to Predictive Safety.</p>
+  <div class="container">
+    © 2026 <span>Majid Roshan</span> — HSE 5.0 Visionary.
+    All rights reserved.
+  </div>
 </footer>
 
 </body>
