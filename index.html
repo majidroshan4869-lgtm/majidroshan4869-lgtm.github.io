@@ -1,1130 +1,206 @@
 
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#071a2b">
-<meta name="description" content="Majid Roshan — Founder and HSE 5.0 Visionary, Senior HSE Leader, Strategic Consultant and Author.">
-<meta name="author" content="Majid Roshan">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Majid Roshan | HSE 5.0 Visionary">
-<meta property="og:description" content="From reactive safety to predictive, human-centric and connected HSE.">
-<meta property="og:url" content="https://majidroshan4869-lgtm.github.io/">
-
-<title>Majid Roshan | Founder & HSE 5.0 Visionary</title>
-
-<link rel="canonical" href="https://majidroshan4869-lgtm.github.io/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Majid Roshan",
-  "url":"https://majidroshan4869-lgtm.github.io/",
-  "jobTitle":"Founder & HSE 5.0 Visionary",
-  "description":"Senior HSE leader, strategic consultant and author focused on predictive, human-centric and resilient HSE systems.",
-  "knowsAbout":[
-    "HSE Management",
-    "Industrial Safety",
-    "Process Safety",
-    "Risk Management",
-    "Artificial Intelligence in HSE",
-    "Predictive Safety",
-    "Emergency Management",
-    "Organizational Resilience"
-  ]
-}
-</script>
-
-<style>
-:root {
-  --navy:#071a2b;
-  --navy2:#0b263c;
-  --panel:#102f46;
-  --green:#55d6a2;
-  --green2:#a4f0d0;
-  --white:#f4f8fb;
-  --muted:#a9bdca;
-  --line:rgba(190,220,232,.15);
-  --red:#f06b67;
-  --max:1160px;
-}
-
-* {
-  box-sizing:border-box;
-}
-
-html {
-  scroll-behavior:smooth;
-}
-
-body {
-  margin:0;
-  background:var(--navy);
-  color:var(--white);
-  font-family:"DM Sans",Arial,sans-serif;
-  line-height:1.65;
-}
-
-a {
-  color:inherit;
-  text-decoration:none;
-}
-
-.wrap {
-  width:min(var(--max),calc(100% - 44px));
-  margin:auto;
-}
-
-.topline {
-  height:4px;
-  background:linear-gradient(90deg,var(--green),#2e8eaa 65%,var(--red));
-}
-
-header {
-  position:sticky;
-  top:0;
-  z-index:20;
-  background:rgba(7,26,43,.9);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--line);
-}
-
-.nav {
-  height:76px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:24px;
-}
-
-.brand {
-  font-family:Manrope,sans-serif;
-  font-weight:800;
-  letter-spacing:.04em;
-  font-size:15px;
-}
-
-.brand span {
-  color:var(--green);
-}
-
-nav {
-  display:flex;
-  gap:25px;
-  align-items:center;
-}
-
-nav a {
-  font-size:13px;
-  color:#c7d6df;
-  transition:.2s;
-}
-
-nav a:hover {
-  color:var(--green);
-}
-
-.nav-cta {
-  border:1px solid rgba(85,214,162,.55);
-  padding:9px 15px;
-  border-radius:5px;
-  color:var(--green);
-}
-
-.hero {
-  position:relative;
-  overflow:hidden;
-  padding:112px 0 100px;
-  background:
-    radial-gradient(ellipse at 78% 25%,rgba(47,128,145,.22),transparent 34%),
-    linear-gradient(135deg,#071a2b 0%,#0a2237 58%,#0b2d40 100%);
-}
-
-.hero:after {
-  content:"";
-  position:absolute;
-  right:-150px;
-  top:45px;
-  width:560px;
-  height:560px;
-  border:1px solid rgba(85,214,162,.13);
-  border-radius:50%;
-  box-shadow:
-    0 0 0 55px rgba(85,214,162,.025),
-    0 0 0 110px rgba(85,214,162,.02);
-  pointer-events:none;
-}
-
-.eyebrow {
-  color:var(--green);
-  font-size:12px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  font-weight:800;
-}
-
-.hero-grid {
-  display:grid;
-  grid-template-columns:1.25fr .75fr;
-  gap:60px;
-  align-items:center;
-  position:relative;
-  z-index:1;
-}
-
-.hero h1 {
-  font:800 clamp(42px,6vw,76px)/1.08 Manrope,sans-serif;
-  letter-spacing:-.055em;
-  margin:20px 0 22px;
-}
-
-.hero h1 span {
-  color:var(--green);
-}
-
-.hero-sub {
-  font:500 clamp(17px,2vw,21px)/1.55 Manrope,sans-serif;
-  color:#d5e2e9;
-  max-width:720px;
-}
-
-.hero-copy {
-  max-width:690px;
-  color:var(--muted);
-  font-size:16px;
-  margin:20px 0 32px;
-}
-
-.actions {
-  display:flex;
-  gap:13px;
-  flex-wrap:wrap;
-}
-
-.btn {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:13px 19px;
-  border-radius:5px;
-  font-size:13px;
-  font-weight:800;
-  letter-spacing:.02em;
-  transition:.2s;
-}
-
-.btn-primary {
-  background:var(--green);
-  color:#062235;
-}
-
-.btn-primary:hover {
-  background:var(--green2);
-  transform:translateY(-2px);
-}
-
-.btn-ghost {
-  border:1px solid rgba(220,239,245,.3);
-  color:var(--white);
-}
-
-.btn-ghost:hover {
-  border-color:var(--green);
-  color:var(--green);
-}
-
-.hero-mark {
-  min-height:330px;
-  display:grid;
-  place-items:center;
-  position:relative;
-}
-
-.orbit {
-  width:290px;
-  height:290px;
-  border:1px solid rgba(85,214,162,.35);
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  position:relative;
-}
-
-.orbit:before,
-.orbit:after {
-  content:"";
-  position:absolute;
-  border:1px solid rgba(85,214,162,.16);
-  border-radius:50%;
-}
-
-.orbit:before { inset:22px; }
-.orbit:after { inset:52px; }
-
-.core {
-  width:150px;
-  height:150px;
-  border-radius:50%;
-  background:linear-gradient(145deg,#174b5b,#0d2b40);
-  border:1px solid rgba(85,214,162,.55);
-  display:grid;
-  place-items:center;
-  text-align:center;
-  box-shadow:0 0 60px rgba(85,214,162,.12);
-  z-index:1;
-}
-
-.core strong {
-  font:800 34px Manrope;
-  color:var(--green);
-  display:block;
-  line-height:1;
-}
-
-.core small {
-  font-size:10px;
-  letter-spacing:.18em;
-  color:#d6e8eb;
-}
-
-.orbit-label {
-  position:absolute;
-  background:#0b263c;
-  border:1px solid var(--line);
-  padding:7px 11px;
-  border-radius:4px;
-  color:#d4e5eb;
-  font-size:10px;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-}
-
-.l1 {
-  top:20px;
-  left:50%;
-  transform:translateX(-50%);
-}
-
-.l2 { right:-25px; top:48%; }
-.l3 {
-  bottom:18px;
-  left:50%;
-  transform:translateX(-50%);
-}
-.l4 { left:-30px; top:48%; }
-
-.proof {
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  background:#091f32;
-}
-
-.proof-grid {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-}
-
-.proof-item {
-  padding:25px 22px;
-  border-right:1px solid var(--line);
-}
-
-.proof-item:last-child { border:0; }
-
-.proof-item b {
-  display:block;
-  font:800 21px Manrope;
-  color:var(--green);
-}
-
-.proof-item span {
-  font-size:11px;
-  color:var(--muted);
-  letter-spacing:.08em;
-  text-transform:uppercase;
-}
-
-section {
-  padding:94px 0;
-}
-
-.section-head {
-  max-width:720px;
-  margin-bottom:42px;
-}
-
-.kicker {
-  font-size:11px;
-  color:var(--green);
-  font-weight:800;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-}
-
-.section-head h2 {
-  font:800 clamp(30px,4vw,46px)/1.15 Manrope;
-  margin:12px 0 15px;
-  letter-spacing:-.04em;
-}
-
-.section-head p {
-  color:var(--muted);
-  margin:0;
-}
-
-.about-grid {
-  display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:70px;
-}
-
-.about-aside {
-  border-left:2px solid var(--green);
-  padding:7px 0 7px 25px;
-  height:max-content;
-}
-
-.about-aside strong {
-  font:700 21px/1.45 Manrope;
-  display:block;
-}
-
-.about-aside span {
-  display:block;
-  color:var(--green);
-  font-size:12px;
-  margin-top:14px;
-}
-
-.about-text p {
-  color:#c0d0d9;
-  margin:0 0 17px;
-}
-
-.about-text p strong {
-  color:#fff;
-}
-
-.principles {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-  margin-top:30px;
-}
-
-.principle {
-  background:rgba(255,255,255,.035);
-  border:1px solid var(--line);
-  padding:18px;
-  border-radius:5px;
-}
-
-.principle b {
-  color:var(--green);
-  display:block;
-  font-size:13px;
-  margin-bottom:5px;
-}
-
-.principle span {
-  color:var(--muted);
-  font-size:12px;
-}
-
-.dark-section {
-  background:#091f32;
-}
-
-.framework {
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:10px;
-}
-
-.stage {
-  padding:22px 16px;
-  background:linear-gradient(180deg,rgba(27,66,87,.72),rgba(13,39,59,.72));
-  border:1px solid var(--line);
-  min-height:170px;
-  position:relative;
-}
-
-.stage:not(:last-child):after {
-  content:"";
-  position:absolute;
-  right:-7px;
-  top:31px;
-  width:12px;
-  height:12px;
-  border-top:1px solid var(--green);
-  border-right:1px solid var(--green);
-  transform:rotate(45deg);
-  z-index:2;
-}
-
-.stage small {
-  color:var(--green);
-  font-weight:800;
-  letter-spacing:.13em;
-  font-size:10px;
-}
-
-.stage h3 {
-  font:700 17px Manrope;
-  margin:16px 0 8px;
-}
-
-.stage p {
-  font-size:12px;
-  color:var(--muted);
-  margin:0;
-}
-
-.framework-note {
-  margin-top:24px;
-  padding:18px 21px;
-  border-left:2px solid var(--red);
-  background:rgba(240,107,103,.06);
-  color:#c7d5dd;
-  font-size:13px;
-}
-
-.cards {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-}
-
-.card {
-  background:#0d293e;
-  border:1px solid var(--line);
-  padding:25px 23px;
-  border-radius:5px;
-  min-height:205px;
-  transition:.25s;
-}
-
-.card:hover {
-  transform:translateY(-4px);
-  border-color:rgba(85,214,162,.5);
-}
-
-.card .num {
-  font:800 12px Manrope;
-  color:var(--green);
-  letter-spacing:.1em;
-}
-
-.card h3 {
-  font:700 18px Manrope;
-  margin:15px 0 9px;
-}
-
-.card p {
-  font-size:13px;
-  color:var(--muted);
-  margin:0;
-}
-
-.experience {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-}
-
-.exp {
-  padding:24px;
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.025);
-}
-
-.exp h3 {
-  font:700 17px Manrope;
-  margin:0 0 10px;
-}
-
-.exp p {
-  color:var(--muted);
-  font-size:13px;
-  margin:0;
-}
-
-.exp .tag {
-  display:inline-block;
-  color:var(--green);
-  font-size:10px;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  margin-bottom:10px;
-}
-
-.book {
-  display:grid;
-  grid-template-columns:.62fr 1.38fr;
-  gap:55px;
-  align-items:center;
-}
-
-.book-cover {
-  aspect-ratio:3/4;
-  max-width:280px;
-  background:linear-gradient(150deg,#0d3a4a,#071a2b 68%);
-  border:1px solid rgba(85,214,162,.55);
-  padding:27px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  box-shadow:16px 18px 0 rgba(85,214,162,.08);
-  position:relative;
-  overflow:hidden;
-}
-
-.book-cover:after {
-  content:"";
-  position:absolute;
-  width:220px;
-  height:220px;
-  border:1px solid rgba(85,214,162,.35);
-  border-radius:50%;
-  right:-90px;
-  bottom:45px;
-  box-shadow:
-    0 0 0 25px rgba(85,214,162,.04),
-    0 0 0 50px rgba(85,214,162,.03);
-}
-
-.book-cover small {
-  font-size:9px;
-  letter-spacing:.22em;
-  color:var(--green);
-}
-
-.book-cover strong {
-  font:800 34px/1.02 Manrope;
-  letter-spacing:-.04em;
-  z-index:1;
-}
-
-.book-cover strong span {
-  color:var(--green);
-}
-
-.book-cover em {
-  font-size:10px;
-  color:#c2d6de;
-  font-style:normal;
-  z-index:1;
-}
-
-.book-copy h3 {
-  font:800 27px/1.2 Manrope;
-  margin:0 0 10px;
-}
-
-.book-copy .subtitle {
-  color:var(--green);
-  font-size:14px;
-  margin-bottom:22px;
-}
-
-.book-copy p {
-  color:var(--muted);
-  font-size:14px;
-}
-
-.status {
-  display:inline-block;
-  border:1px solid rgba(85,214,162,.35);
-  color:var(--green);
-  font-size:10px;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-  padding:6px 10px;
-  margin-top:10px;
-}
-
-.cta {
-  background:linear-gradient(110deg,#0d3447,#0b263c);
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  padding:68px 0;
-}
-
-.cta-inner {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:30px;
-}
-
-.cta h2 {
-  font:800 clamp(27px,3.5vw,40px) Manrope;
-  margin:8px 0;
-}
-
-.cta p {
-  color:var(--muted);
-  margin:0;
-}
-
-.contact-note {
-  font-size:11px;
-  color:#91a9b7;
-  margin-top:17px;
-}
-
-footer {
-  padding:30px 0;
-  background:#061522;
-}
-
-.footer {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-}
-
-.footer strong {
-  font:800 13px Manrope;
-  letter-spacing:.06em;
-}
-
-.footer span {
-  font-size:11px;
-  color:#8198a6;
-}
-
-.footer-links {
-  display:flex;
-  gap:18px;
-  font-size:12px;
-  color:#b5c6cf;
-}
-
-@media(max-width:850px) {
-  nav { gap:13px; }
-  nav a { font-size:11px; }
-  .hero-grid { grid-template-columns:1fr; }
-  .hero-mark { display:none; }
-  .about-grid,.book { grid-template-columns:1fr; gap:30px; }
-  .framework { grid-template-columns:repeat(2,1fr); }
-  .stage:not(:last-child):after { display:none; }
-  .cards { grid-template-columns:repeat(2,1fr); }
-}
-
-@media(max-width:600px) {
-  .wrap { width:min(100% - 32px,var(--max)); }
-  .nav { height:65px; }
-  .brand { font-size:12px; }
-  nav a:not(.nav-cta) { display:none; }
-  .hero { padding:80px 0 75px; }
-  .proof-grid { grid-template-columns:repeat(2,1fr); }
-  .proof-item:nth-child(2) { border-right:0; }
-  .proof-item:nth-child(-n+2) { border-bottom:1px solid var(--line); }
-  section { padding:70px 0; }
-  .principles,.cards,.experience { grid-template-columns:1fr; }
-  .framework { grid-template-columns:1fr; }
-  .cta-inner,.footer { align-items:flex-start; flex-direction:column; }
-  .footer-links { flex-wrap:wrap; }
-  .book-cover { max-width:230px; }
-}
-
-@media(prefers-reduced-motion:reduce) {
-  html { scroll-behavior:auto; }
-  *,*:before,*:after { transition:none!important; }
-}
-</style>
-</head>
-
-<body>
-
-<div class="topline"></div>
-
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#home">MAJID <span>ROSHAN</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#hse50">HSE 5.0</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#experience">Experience</a>
-      <a href="#publication">Book</a>
-      <a class="nav-cta" href="#contact">Connect</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-<section class="hero" id="home">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">Industrial HSE · Risk · Resilience · AI</div>
-      <h1>Majid <span>Roshan</span></h1>
-      <div class="hero-sub">
-        Founder &amp; HSE 5.0 Visionary<br>
-        Senior HSE Leader · Strategic Consultant · Author
+<section id="home" class="hero-alpha">
+  <div class="hero-alpha-inner">
+
+    <div class="hero-alpha-photo">
+      <img
+        src="majid-roshan.jpg"
+        alt="Majid Roshan – Founder and HSE 5.0 Visionary"
+        fetchpriority="high"
+      />
+      <div class="photo-caption">
+        FOUNDER · HSE 5.0 VISIONARY
       </div>
-      <p class="hero-copy">
+    </div>
+
+    <div class="hero-alpha-content">
+      <div class="hero-eyebrow">
+        INDUSTRIAL HSE · RISK · RESILIENCE · AI
+      </div>
+
+      <h1>Majid Roshan</h1>
+
+      <h2>Founder &amp; HSE 5.0 Visionary</h2>
+
+      <h3>
+        Senior HSE Leader · Strategic Consultant · Author
+      </h3>
+
+      <p>
         Advancing the future of health, safety and environment —
         from reactive practices to predictive, human-centric,
         connected and resilient systems.
       </p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#hse50">Explore HSE 5.0</a>
-        <a class="btn btn-ghost" href="#expertise">Professional Expertise</a>
+
+      <div class="hero-actions">
+        <a href="#hse50" class="hero-btn primary">
+          Explore HSE 5.0
+        </a>
+        <a href="#expertise" class="hero-btn secondary">
+          Professional Expertise
+        </a>
+      </div>
+
+      <div class="hero-signature">
+        LEADERSHIP · INNOVATION · RESILIENCE
       </div>
     </div>
 
-    <div class="hero-mark">
-      <div class="orbit">
-        <span class="orbit-label l1">Human-centric</span>
-        <span class="orbit-label l2">Predictive</span>
-        <span class="orbit-label l3">Resilient</span>
-        <span class="orbit-label l4">Connected</span>
-        <div class="core">
-          <div>
-            <strong>HSE<br>5.0</strong>
-            <small>THE NEXT FRONTIER</small>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
-<div class="proof">
-  <div class="wrap proof-grid">
-    <div class="proof-item">
-      <b>30+ Years</b>
-      <span>Industrial project experience*</span>
-    </div>
-    <div class="proof-item">
-      <b>Steel &amp; DRI</b>
-      <span>Complex industrial environments</span>
-    </div>
-    <div class="proof-item">
-      <b>HSE 5.0</b>
-      <span>Concept &amp; framework development</span>
-    </div>
-    <div class="proof-item">
-      <b>ISO 45001 / 14001</b>
-      <span>Auditing qualifications</span>
-    </div>
-  </div>
-</div>
+<style>
+.hero-alpha {
+  background: #07182b;
+  color: #ffffff;
+  padding: 75px 6%;
+  overflow: hidden;
+}
 
-<section id="about">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Professional profile</div>
-      <h2>Experience grounded in industry.<br>Vision focused on the future.</h2>
-      <p>
-        A practical HSE leadership perspective shaped by complex
-        industrial projects, operational realities and the evolving
-        role of technology in risk management.
-      </p>
-    </div>
+.hero-alpha-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: 65px;
+}
 
-    <div class="about-grid">
-      <div class="about-aside">
-        <strong>
-          “The future of safety is not simply more technology.
-          It is better decisions, stronger barriers and people
-          empowered by reliable intelligence.”
-        </strong>
-        <span>MAJID ROSHAN · HSE 5.0 VISION</span>
-      </div>
+.hero-alpha-photo {
+  position: relative;
+  max-width: 440px;
+  width: 100%;
+  margin: auto;
+}
 
-      <div class="about-text">
-        <p>
-          Majid Roshan is a senior HSE professional, strategic
-          consultant and author focused on the evolution of
-          industrial health, safety and environmental management.
-          His professional experience includes involvement across
-          the <strong>construction, commissioning and operation lifecycle</strong>
-          of major steelmaking and direct-reduction facilities.
-        </p>
+.hero-alpha-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 16px;
+  border: 1px solid rgba(91, 211, 139, 0.45);
+  box-shadow: 0 25px 65px rgba(0,0,0,.4);
+}
 
-        <p>
-          His work brings together operational HSE leadership,
-          risk-based thinking, critical-control assurance,
-          emergency preparedness, organizational resilience and
-          the responsible application of digital technologies
-          and artificial intelligence.
-        </p>
+.photo-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 12px;
+  right: 12px;
+  text-align: center;
+  background: rgba(5, 23, 39, .88);
+  color: #65d68c;
+  padding: 13px 8px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  border-radius: 6px;
+}
 
-        <p>
-          As the originator and developer of the
-          <strong>HSE 5.0 concept and its evolving framework</strong>,
-          he advocates a human-centric approach in which predictive
-          intelligence strengthens — rather than replaces —
-          professional judgement, worker participation and
-          accountable leadership.
-        </p>
+.hero-eyebrow {
+  color: #62d58b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
 
-        <div class="principles">
-          <div class="principle">
-            <b>Human at the centre</b>
-            <span>Technology supports people, competence and participation.</span>
-          </div>
-          <div class="principle">
-            <b>Risk-informed</b>
-            <span>Decisions connect hazards, barriers, evidence and action.</span>
-          </div>
-          <div class="principle">
-            <b>Resilience-led</b>
-            <span>Organizations anticipate, adapt, respond and learn.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+.hero-alpha-content h1 {
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.08;
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-weight: 800;
+}
 
-<section class="dark-section" id="hse50">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">The vision</div>
-      <h2>HSE 5.0 — The next evolution of safety</h2>
-      <p>
-        HSE 5.0 is a developing strategic concept and framework
-        that seeks to integrate human capability, predictive
-        intelligence, connected systems and organizational
-        resilience into a coherent approach to HSE management.
-      </p>
-    </div>
+.hero-alpha-content h2 {
+  color: #62d58b;
+  font-size: clamp(22px, 3vw, 30px);
+  margin: 0 0 12px;
+}
 
-    <div class="framework">
-      <div class="stage">
-        <small>01 / FOUNDATION</small>
-        <h3>Reactive</h3>
-        <p>Learning from incidents, losses and experience.</p>
-      </div>
-      <div class="stage">
-        <small>02 / CONTROL</small>
-        <h3>Preventive</h3>
-        <p>Identifying hazards and strengthening prevention.</p>
-      </div>
-      <div class="stage">
-        <small>03 / DIGITAL</small>
-        <h3>Connected</h3>
-        <p>Using reliable data, digital workflows and visibility.</p>
-      </div>
-      <div class="stage">
-        <small>04 / INTELLIGENCE</small>
-        <h3>Predictive</h3>
-        <p>Recognizing patterns, weak signals and emerging risk.</p>
-      </div>
-      <div class="stage">
-        <small>05 / INTEGRATION</small>
-        <h3>HSE 5.0</h3>
-        <p>Human-centric, connected, adaptive and resilient HSE.</p>
-      </div>
-    </div>
+.hero-alpha-content h3 {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #d4dfeb;
+  font-weight: 500;
+}
 
-    <div class="framework-note">
-      HSE 5.0 is presented here as a concept and framework under
-      development, not as a certified standard, regulator-issued
-      requirement or commercially deployed software product.
-    </div>
-  </div>
-</section>
+.hero-alpha-content p {
+  max-width: 620px;
+  color: #bdcad8;
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 25px 0 30px;
+}
 
-<section id="expertise">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Capabilities</div>
-      <h2>Strategic expertise. Practical application.</h2>
-      <p>
-        Supporting organizations that operate in complex,
-        high-risk and asset-intensive environments.
-      </p>
-    </div>
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
 
-    <div class="cards">
-      <article class="card">
-        <div class="num">01</div>
-        <h3>HSE Leadership &amp; Governance</h3>
-        <p>HSE strategy, governance models, leadership accountability,
-        performance review and management-system improvement.</p>
-      </article>
+.hero-btn {
+  display: inline-block;
+  padding: 14px 23px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: .25s ease;
+}
 
-      <article class="card">
-        <div class="num">02</div>
-        <h3>Industrial &amp; High-Risk HSE</h3>
-        <p>Construction, commissioning and operational HSE across
-        steelmaking, direct reduction and major industrial projects.</p>
-      </article>
+.hero-btn.primary {
+  background: #168b50;
+  color: #ffffff;
+}
 
-      <article class="card">
-        <div class="num">03</div>
-        <h3>Risk &amp; Critical Controls</h3>
-        <p>Risk assessment, critical-control management, verification,
-        barrier health and prevention of serious incidents.</p>
-      </article>
+.hero-btn.secondary {
+  border: 1px solid #6bd794;
+  color: #ffffff;
+}
 
-      <article class="card">
-        <div class="num">04</div>
-        <h3>Predictive HSE &amp; AI</h3>
-        <p>Responsible AI applications, leading indicators,
-        weak-signal analysis and human-in-the-loop decision support.</p>
-      </article>
+.hero-btn:hover {
+  transform: translateY(-3px);
+  opacity: .9;
+}
 
-      <article class="card">
-        <div class="num">05</div>
-        <h3>Crisis &amp; Emergency Management</h3>
-        <p>Preparedness, response architecture, scenario planning,
-        business continuity and organizational resilience.</p>
-      </article>
+.hero-signature {
+  color: #6bd794;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 38px;
+}
 
-      <article class="card">
-        <div class="num">06</div>
-        <h3>Consulting, Audits &amp; Documentation</h3>
-        <p>HSE framework design, technical procedures, audit support,
-        competency systems and implementation roadmaps.</p>
-      </article>
-    </div>
-  </div>
-</section>
+@media (max-width: 768px) {
+  .hero-alpha {
+    padding: 45px 22px;
+  }
 
-<section class="dark-section" id="experience">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Industrial background</div>
-      <h2>Built around real operational environments</h2>
-      <p>
-        Selected professional experience and qualifications,
-        as provided by the author.
-      </p>
-    </div>
+  .hero-alpha-inner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
 
-    <div class="experience">
-      <div class="exp">
-        <span class="tag">Steelmaking</span>
-        <h3>Steelmaking furnaces — units 7, 8 and 9</h3>
-        <p>
-          Direct involvement in the construction, commissioning
-          and operation lifecycle of steelmaking furnaces
-          at Mobarakeh Steel.
-        </p>
-      </div>
+  .hero-alpha-photo {
+    max-width: 340px;
+  }
 
-      <div class="exp">
-        <span class="tag">Direct reduction</span>
-        <h3>Five DRI units</h3>
-        <p>
-          Direct involvement in construction, commissioning
-          and operation across Mobarakeh Steel and
-          Saba Steel Complexes.
-        </p>
-      </div>
+  .hero-alpha-content {
+    text-align: center;
+  }
 
-      <div class="exp">
-        <span class="tag">Project HSE</span>
-        <h3>Development projects at Mobarakeh Steel</h3>
-        <p>
-          HSE experience across development projects over
-          the period 1373–1403 in the Iranian calendar.
-        </p>
-      </div>
+  .hero-alpha-content p {
+    font-size: 15px;
+  }
 
-      <div class="exp">
-        <span class="tag">Professional qualifications</span>
-        <h3>HSE auditing</h3>
-        <p>
-          Advanced HSE Lead Auditor qualification,
-          with ISO 45001 and ISO 14001 auditor certificates.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+  .hero-actions {
+    justify-content: center;
+  }
 
-<section id="publication">
-  <div class="wrap book">
-    <div class="book-cover">
-      <small>MAJID ROSHAN</small>
-      <strong>HSE<br><span>5.0</span></strong>
-      <em>
-        THE FUTURE OF SAFETY<br><br>
-        FROM REACTIVE TO PREDICTIVE,
-        HUMAN-CENTRIC, CONNECTED
-        &amp; AUTONOMOUS SAFETY
-      </em>
-    </div>
-
-    <div class="book-copy">
-      <div class="kicker">Featured publication</div>
-      <h3>HSE 5.0 – The Future of Safety</h3>
-      <div class="subtitle">
-        From Reactive Safety to Predictive, Human-Centric,
-        Connected and Autonomous Safety
-      </div>
-      <p>
-        A book-length work presenting the HSE 5.0 vision,
-        its conceptual foundations and the changing relationship
-        between people, risk, technology, intelligence and
-        organizational safety.
-      </p>
-      <p>
-        <strong>Author:</strong> Majid Roshan<br>
-        <strong>Edition:</strong> 2026 manuscript
-      </p>
-      <span class="status">
-        Manuscript prepared · Publication details to be announced
-      </span>
-    </div>
-  </div>
-</section>
-
-<div class="cta" id="contact">
-  <div class="wrap cta-inner">
-    <div>
-      <div class="kicker">Professional connection</div>
-      <h2>Let’s advance the future of HSE.</h2>
-      <p>
-        For strategic collaboration, consulting, speaking
-        and professional enquiries.
-      </p>
-      <div class="contact-note">
-        Connect through the official LinkedIn platform.
-        Direct contact details will be added when verified.
-      </div>
-    </div>
-
-    <a class="btn btn-primary"
-       href="https://www.linkedin.com/"
-       target="_blank"
-       rel="noopener noreferrer">
-       Open LinkedIn
-    </a>
-  </div>
-</div>
-
-</main>
-
-<footer>
-  <div class="wrap footer">
-    <div>
-      <strong>MAJID ROSHAN <span style="color:var(--green)">| HSE 5.0</span></strong>
-      <br>
-      <span>Founder &amp; HSE 5.0 Visionary · Senior HSE Leader · Author</span>
-    </div>
-
-    <div class="footer-links">
-      <a href="#home">Back to top ↑</a>
-      <span>© 2026 Majid Roshan. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
-
-</body>
-</html>
+  .hero-signature {
+    line-height: 2;
+  }
+}
+</style>
