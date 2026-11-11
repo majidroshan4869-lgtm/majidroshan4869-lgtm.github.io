@@ -4,7 +4,7 @@
 
     <div class="hero-alpha-photo">
       <img
-        src="majid-roshan.jpg.png" alt="Majid Roshan">
+        src="majid-roshan.jpg.png"
         alt="Majid Roshan – Founder and HSE 5.0 Visionary"
         fetchpriority="high"
       />
@@ -53,7 +53,7 @@
 .hero-alpha {
   background: #07182b;
   color: #ffffff;
-  padding: 75px 6%;
+  padding: 65px 5%;
   overflow: hidden;
 }
 
@@ -61,14 +61,14 @@
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 0.72fr 1.28fr;
   align-items: center;
-  gap: 65px;
+  gap: 45px;
 }
 
 .hero-alpha-photo {
   position: relative;
-  max-width: 440px;
+  max-width: 300px;
   width: 100%;
   margin: auto;
 }
@@ -76,25 +76,26 @@
 .hero-alpha-photo img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center 25%;
+  object-fit: contain;
+  object-position: center;
   border-radius: 16px;
   border: 1px solid rgba(91, 211, 139, 0.45);
-  box-shadow: 0 25px 65px rgba(0,0,0,.4);
+  box-shadow: 0 20px 45px rgba(0,0,0,.35);
 }
 
 .photo-caption {
   position: absolute;
-  bottom: 16px;
-  left: 12px;
-  right: 12px;
+  bottom: 12px;
+  left: 10px;
+  right: 10px;
   text-align: center;
   background: rgba(5, 23, 39, .88);
   color: #65d68c;
-  padding: 13px 8px;
-  font-size: 11px;
-  letter-spacing: 2px;
+  padding: 11px 6px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
   border-radius: 6px;
 }
 
@@ -106,8 +107,12 @@
   margin-bottom: 22px;
 }
 
+.hero-alpha-content {
+  min-width: 0;
+}
+
 .hero-alpha-content h1 {
-  font-size: clamp(42px, 6vw, 68px);
+  font-size: clamp(38px, 5vw, 64px);
   line-height: 1.08;
   margin: 0 0 18px;
   color: #ffffff;
@@ -116,7 +121,8 @@
 
 .hero-alpha-content h2 {
   color: #62d58b;
-  font-size: clamp(22px, 3vw, 30px);
+  font-size: clamp(21px, 2.5vw, 29px);
+  line-height: 1.4;
   margin: 0 0 12px;
 }
 
@@ -130,9 +136,9 @@
 .hero-alpha-content p {
   max-width: 620px;
   color: #bdcad8;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.9;
-  margin: 25px 0 30px;
+  margin: 22px 0 28px;
 }
 
 .hero-actions {
@@ -170,21 +176,21 @@
   color: #6bd794;
   font-size: 10px;
   letter-spacing: 2px;
-  margin-top: 38px;
+  margin-top: 32px;
 }
 
 @media (max-width: 768px) {
   .hero-alpha {
-    padding: 45px 22px;
+    padding: 40px 20px;
   }
 
   .hero-alpha-inner {
     grid-template-columns: 1fr;
-    gap: 38px;
+    gap: 30px;
   }
 
   .hero-alpha-photo {
-    max-width: 340px;
+    max-width: 260px;
   }
 
   .hero-alpha-content {
@@ -193,6 +199,8 @@
 
   .hero-alpha-content p {
     font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-actions {
