@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Official professional portfolio of Majid Roshan, Senior HSE Leader, Strategic Consultant, Author and Founder of the HSE 5.0 Vision.">
+<meta name="author" content="Majid Roshan">
+<title>Majid Roshan | HSE 5.0 Visionary</title>
+
+<style>
+:root {
+  --navy: #0b1830;
+  --navy2: #132746;
+  --green: #21a477;
+  --white: #ffffff;
+  --light: #f3f6f8;
+  --text: #25364a;
+  --muted: #aab8c8;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior:smooth; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--text);
+  line-height:1.7;
+  background:var(--white);
+}
+
+a { text-decoration:none; color:inherit; }
+
+header {
+  background:var(--navy);
+  color:white;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:15px;
+  border-bottom:1px solid #263a55;
+}
+
+.logo {
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.logo span { color:#36c995; }
+
+nav { display:flex; flex-wrap:wrap; gap:22px; }
+
+nav a {
+  color:#d8e2ee;
+  font-size:13px;
+  transition:.3s;
+}
+
+nav a:hover { color:#36c995; }
+
+.hero {
+  min-height:570px;
+  background:linear-gradient(115deg,#0b1830 0%,#142d4d 70%,#155b50 120%);
+  color:white;
+  padding:110px 10%;
+  display:flex;
+  align-items:center;
+}
+
+.hero-content { max-width:850px; }
+
+.eyebrow {
+  color:#48d4a1;
+  letter-spacing:3px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:22px;
+}
+
+h1 {
+  font-size:clamp(38px,6vw,65px);
+  line-height:1.12;
+  margin-bottom:22px;
+  letter-spacing:-1px;
+}
+
+.hero h2 {
+  color:#b8cadd;
+  font-size:21px;
+  font-weight:400;
+  margin-bottom:20px;
+}
+
+.hero p {
+  color:#d2dce8;
+  max-width:700px;
+  font-size:16px;
+  margin-bottom:32px;
+}
+
+.btn {
+  display:inline-block;
+  padding:13px 25px;
+  background:var(--green);
+  color:white;
+  border-radius:4px;
+  font-weight:bold;
+  font-size:14px;
+  transition:.3s;
+}
+
+.btn:hover { background:#16845f; }
+
+.btn-outline {
+  border:1px solid #9db0c5;
+  background:transparent;
+  margin-left:10px;
+}
+
+.btn-outline:hover { background:#ffffff18; }
+
+section { padding:85px 10%; }
+
+.section-title {
+  color:var(--navy);
+  font-size:32px;
+  margin-bottom:12px;
+}
+
+.section-line {
+  width:65px;
+  height:4px;
+  background:var(--green);
+  margin-bottom:30px;
+}
+
+.intro {
+  max-width:850px;
+  color:#566579;
+  font-size:16px;
+}
+
+.dark {
+  background:var(--navy);
+  color:white;
+}
+
+.dark .section-title { color:white; }
+
+.dark .intro { color:#c1cedc; }
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+  margin-top:35px;
+}
+
+.card {
+  background:white;
+  padding:28px;
+  border:1px solid #e5ebf0;
+  border-radius:7px;
+  box-shadow:0 8px 25px #0b18300a;
+}
+
+.card h3 {
+  color:var(--navy);
+  font-size:19px;
+  margin-bottom:12px;
+}
+
+.card p {
+  color:#64748b;
+  font-size:14px;
+}
+
+.dark .card {
+  background:#142844;
+  border:1px solid #29415e;
+}
+
+.dark .card h3 { color:#43d1a0; }
+
+.dark .card p { color:#c0cede; }
+
+.highlight {
+  color:#36c995;
+  font-weight:bold;
+}
+
+.tag {
+  display:inline-block;
+  background:#e6f5ef;
+  color:#167957;
+  padding:6px 12px;
+  border-radius:3px;
+  font-size:12px;
+  margin:5px 4px 5px 0;
+}
+
+.publication {
+  border-left:3px solid var(--green);
+  padding:15px 22px;
+  margin:22px 0;
+  background:#f6f8fa;
+}
+
+.publication h3 { color:var(--navy); }
+
+.publication p { color:#64748b; font-size:14px; }
+
+.contact {
+  background:#f3f6f8;
+  text-align:center;
+}
+
+.contact .intro { margin:auto; }
+
+footer {
+  background:#071224;
+  color:#aab8c8;
+  padding:28px 10%;
+  text-align:center;
+  font-size:13px;
+}
+
+footer span { color:#36c995; }
+
+@media(max-width:700px) {
+  header { padding:20px 6%; }
+  nav { gap:12px; }
+  nav a { font-size:12px; }
+  .hero { padding:85px 7%; min-height:500px; }
+  section { padding:65px 7%; }
+  .btn-outline { margin:12px 0 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MAJID <span>ROSHAN</span></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#vision">HSE 5.0</a>
+    <a href="#company">Company</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">INDUSTRIAL HSE | STRATEGIC LEADERSHIP | INNOVATION</div>
+
+    <h1>MAJID ROSHAN</h1>
+
+    <h2>Founder & HSE 5.0 Visionary</h2>
+
+    <p>
+      Senior HSE Leader, Strategic Consultant and Author,
+      advancing the future of Health, Safety and Environment
+      through predictive intelligence, human-centered systems,
+      digital transformation and organizational resilience.
+    </p>
+
+    <a href="#vision" class="btn">Explore HSE 5.0</a>
+    <a href="#about" class="btn btn-outline">Discover My Profile</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Majid Roshan</h2>
+  <div class="section-line"></div>
+
+  <p class="intro">
+    Majid Roshan is a senior HSE professional, strategic consultant
+    and author with extensive experience in industrial safety,
+    high-risk operations, steelmaking, direct reduction plants,
+    construction, commissioning and operational HSE management.
+
+    His professional vision focuses on transforming traditional
+    safety management into intelligent, predictive, integrated
+    and human-centered systems.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Industrial Experience</h3>
+      <p>HSE leadership across major industrial development,
+      construction, commissioning and operational environments.</p>
+    </div>
+
+    <div class="card">
+      <h3>Strategic Leadership</h3>
+      <p>Developing organizational HSE strategies, risk governance,
+      critical control systems and operational resilience.</p>
+    </div>
+
+    <div class="card">
+      <h3>Research & Innovation</h3>
+      <p>Developing new approaches to predictive safety,
+      AI-enabled HSE and future-oriented safety management.</p>
+    </div>
+  </div>
+</section>
+
+<section id="vision" class="dark">
+  <h2 class="section-title">HSE 5.0 Vision</h2>
+  <div class="section-line"></div>
+
+  <p class="intro">
+    HSE 5.0 represents a strategic vision for the next generation
+    of Health, Safety and Environment management.
+
+    It moves beyond reactive and conventional preventive approaches
+    toward predictive, human-centric, connected and increasingly
+    autonomous safety systems.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Predictive Safety</h3>
+      <p>Anticipating emerging risks through data intelligence,
+      early-warning indicators and predictive analytics.</p>
+    </div>
+
+    <div class="card">
+      <h3>Human-Centric HSE</h3>
+      <p>Keeping human dignity, participation, competency
+      and decision-making at the center of safety systems.</p>
+    </div>
+
+    <div class="card">
+      <h3>Connected Intelligence</h3>
+      <p>Integrating people, processes, technologies,
+      operational data and organizational knowledge.</p>
+    </div>
+
+    <div class="card">
+      <h3>Autonomous Capabilities</h3>
+      <p>Developing intelligent systems that support
+      early detection, informed intervention and adaptive response.</p>
+    </div>
+  </div>
+</section>
+
+<section id="company">
+  <h2 class="section-title">Global HSE 5.0 Company</h2>
+  <div class="section-line"></div>
+
+  <p class="intro">
+    Global HSE 5.0 Company is the professional platform associated
+    with the development and advancement of the HSE 5.0 vision.
+
+    Its strategic direction is to support organizations in
+    understanding, designing and implementing next-generation
+    HSE management frameworks.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Global Framework</h3>
+      <p>Strategic architecture and implementation guidance
+      for HSE 5.0 transformation.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consulting & Advisory</h3>
+      <p>Strategic HSE consulting, organizational assessment
+      and transformation roadmaps.</p>
+    </div>
+
+    <div class="card">
+      <h3>Digital & AI-HSE</h3>
+      <p>Exploring artificial intelligence, predictive analytics
+      and connected safety ecosystems.</p>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="dark">
+  <h2 class="section-title">Professional Expertise</h2>
+  <div class="section-line"></div>
+
+  <p class="intro">
+    Professional focus areas and specialized capabilities:
+  </p>
+
+  <div style="margin-top:25px">
+    <span class="tag">Industrial HSE Management</span>
+    <span class="tag">HSE Leadership</span>
+    <span class="tag">Risk Management</span>
+    <span class="tag">Process Safety</span>
+    <span class="tag">Crisis Management</span>
+    <span class="tag">Organizational Resilience</span>
+    <span class="tag">ISO 45001</span>
+    <span class="tag">ISO 14001</span>
+    <span class="tag">HSE Auditing</span>
+    <span class="tag">Predictive HSE</span>
+    <span class="tag">AI in Safety</span>
+    <span class="tag">Digital Transformation</span>
+    <span class="tag">Steel Industry</span>
+    <span class="tag">Construction & Commissioning</span>
+  </div>
+</section>
+
+<section id="publications">
+  <h2 class="section-title">Publications & Research</h2>
+  <div class="section-line"></div>
+
+  <div class="publication">
+    <h3>HSE 5.0 – The Future of Safety</h3>
+    <p>
+      From Reactive Safety to Predictive, Human-Centric,
+      Connected and Autonomous Safety.
+    </p>
+    <p><strong>Author:</strong> Majid Roshan | 2026</p>
+  </div>
+
+  <div class="publication">
+    <h3>Predictive HSE Management with Artificial Intelligence</h3>
+    <p>
+      Exploring the transition from traditional safety management
+      to intelligent and predictive HSE systems.
+    </p>
+  </div>
+
+  <div class="publication">
+    <h3>Community-Based HSE in Oil & Gas Pipelines</h3>
+    <p>
+      A strategic approach to integrated community participation,
+      pipeline risk management and national resilience.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Professional Contact</h2>
+  <div class="section-line" style="margin-left:auto;margin-right:auto"></div>
+
+  <p class="intro">
+    For professional collaboration, strategic consulting,
+    research partnerships and international opportunities,
+    connect with Majid Roshan.
+  </p>
+
+  <div style="margin-top:30px">
+    <a class="btn"
+       href="https://www.linkedin.com/"
+       target="_blank"
+       rel="noopener noreferrer">
+       LinkedIn
+    </a>
+
+    <a class="btn btn-outline"
+       style="color:#17304b;border-color:#17304b"
+       href="https://github.com/majidroshan4869-lgtm"
+       target="_blank"
+       rel="noopener noreferrer">
+       GitHub
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 <span>Majid Roshan</span>. All Rights Reserved.</p>
+  <p>Founder & HSE 5.0 Visionary | Global HSE 5.0 Company</p>
+  <p>From Reactive Safety to Predictive Safety.</p>
+</footer>
+
+</body>
+</html>
