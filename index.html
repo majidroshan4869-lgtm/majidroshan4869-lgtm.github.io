@@ -1,16 +1,20 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#071a2c">
+
 <meta name="description" content="Majid Roshan — Founder and HSE 5.0 Visionary. Industrial HSE leadership, predictive safety, risk management, resilience and strategic advisory.">
+
 <meta property="og:type" content="website">
 <meta property="og:title" content="Majid Roshan | HSE 5.0 Visionary">
 <meta property="og:description" content="From Reactive Safety to Predictive Safety.">
 <meta property="og:url" content="https://majidroshan4869-lgtm.github.io/">
+
 <link rel="canonical" href="https://majidroshan4869-lgtm.github.io/">
+
 <title>Majid Roshan | Founder & HSE 5.0 Visionary</title>
 
 <style>
@@ -25,86 +29,106 @@
 --max:1160px;
 }
 
-*{box-sizing:border-box}
-
-html{
-scroll-behavior:smooth;
-scroll-padding-top:88px
+* {
+box-sizing:border-box;
 }
 
-body{
+html {
+scroll-behavior:smooth;
+scroll-padding-top:88px;
+}
+
+body {
 margin:0;
 background:var(--navy);
 color:var(--white);
 font-family:Inter,Segoe UI,Arial,sans-serif;
-line-height:1.65
+line-height:1.65;
 }
 
-a{color:inherit;text-decoration:none}
+a {
+color:inherit;
+text-decoration:none;
+}
 
-a:focus-visible,button:focus-visible{
+a:focus-visible,
+button:focus-visible {
 outline:3px solid var(--green);
-outline-offset:4px
+outline-offset:4px;
 }
 
-.wrap{
+.wrap {
 width:min(var(--max),calc(100% - 44px));
-margin:auto
+margin:auto;
 }
 
-.skip{
+.skip {
 position:absolute;
 left:-9999px;
 top:8px;
 background:#fff;
 color:#000;
 padding:10px;
-z-index:99
+z-index:99;
 }
 
-.skip:focus{left:10px}
+.skip:focus {
+left:10px;
+}
 
-.topline{
+.topline {
 height:4px;
-background:linear-gradient(90deg,var(--green) 0 62%,var(--red) 62% 65%,transparent 65%)
+background:linear-gradient(
+90deg,
+var(--green) 0 62%,
+var(--red) 62% 65%,
+transparent 65%
+);
 }
 
-header{
+/* NAVIGATION */
+
+header {
 position:sticky;
 top:0;
 z-index:20;
 background:rgba(7,26,44,.94);
 backdrop-filter:blur(14px);
-border-bottom:1px solid var(--line)
+border-bottom:1px solid var(--line);
 }
 
-.nav{
+.nav {
 min-height:76px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:24px
+gap:24px;
 }
 
-.brand{
+.brand {
 font-weight:800;
 letter-spacing:.08em;
-font-size:15px
+font-size:15px;
 }
 
-.brand span{color:var(--green)}
+.brand span {
+color:var(--green);
+}
 
-.links{
+.links {
 display:flex;
 gap:22px;
 align-items:center;
 font-size:13px;
-color:#d5e0e8
+color:#d5e0e8;
 }
 
-.links a:hover{color:var(--green)}
+.links a:hover {
+color:var(--green);
+}
 
-.nav-cta,.btn{
+.nav-cta,
+.btn {
 display:inline-flex;
 align-items:center;
 justify-content:center;
@@ -113,62 +137,73 @@ padding:11px 17px;
 border-radius:4px;
 font-weight:700;
 font-size:13px;
-transition:.2s
+transition:.2s;
 }
 
-.nav-cta,.btn.primary{
+.nav-cta,
+.btn.primary {
 background:var(--green);
-color:#052218
+color:#052218;
 }
 
-.btn:hover,.nav-cta:hover{
+.btn:hover,
+.nav-cta:hover {
 transform:translateY(-2px);
-filter:brightness(1.06)
+filter:brightness(1.06);
 }
 
-.menu{
+.menu {
 display:none;
 background:none;
 color:white;
 border:1px solid var(--line);
 padding:8px 11px;
 border-radius:4px;
-font-size:20px
+font-size:20px;
 }
 
-/* HERO SECTION AND MAIN IMAGE */
+/* HERO AND PROFILE IMAGE */
 
-.hero{
+.hero {
 position:relative;
 overflow:hidden;
 padding:85px 0 100px;
 background:
-radial-gradient(ellipse at 78% 30%,rgba(32,197,138,.13),transparent 35%),
-linear-gradient(135deg,#071a2c,#0a2339 65%,#071a2c)
+radial-gradient(
+ellipse at 78% 30%,
+rgba(32,197,138,.13),
+transparent 35%
+),
+linear-gradient(
+135deg,
+#071a2c,
+#0a2339 65%,
+#071a2c
+);
 }
 
-.hero .wrap{
+.hero .wrap {
 position:relative;
-z-index:1
+z-index:1;
 }
 
-.hero-banner{
+.hero-banner {
 width:100%;
 max-width:1160px;
 margin:0 auto 42px;
 background:#071a2c;
 border:1px solid rgba(255,255,255,.12);
-box-shadow:0 18px 48px rgba(0,0,0,.28)
+box-shadow:0 18px 48px rgba(0,0,0,.28);
 }
 
-.hero-banner img{
+.hero-banner img {
 display:block;
 width:100%;
 height:auto;
-object-fit:contain
+object-fit:contain;
 }
 
-.hero:after{
+.hero:after {
 content:"";
 position:absolute;
 width:480px;
@@ -181,46 +216,48 @@ right:-100px;
 top:35px;
 box-shadow:
 0 0 0 55px rgba(32,197,138,.025),
-0 0 0 110px rgba(32,197,138,.02)
+0 0 0 110px rgba(32,197,138,.02);
 }
 
-.eyebrow{
+.eyebrow {
 color:var(--green);
 font-size:12px;
 font-weight:800;
 letter-spacing:.2em;
-text-transform:uppercase
+text-transform:uppercase;
 }
 
-.hero h1{
+.hero h1 {
 font-size:clamp(42px,7vw,78px);
 line-height:1.04;
 letter-spacing:-.045em;
 max-width:850px;
-margin:22px 0
+margin:22px 0;
 }
 
-.hero h1 span{color:var(--green)}
+.hero h1 span {
+color:var(--green);
+}
 
-.hero .lead{
+.hero .lead {
 font-size:clamp(17px,2vw,21px);
 color:#c2d0da;
-max-width:720px
+max-width:720px;
 }
 
-.hero-actions{
+.hero-actions {
 display:flex;
 gap:12px;
 flex-wrap:wrap;
-margin-top:34px
+margin-top:34px;
 }
 
-.btn.secondary{
+.btn.secondary {
 border-color:rgba(255,255,255,.3);
-color:white
+color:white;
 }
 
-.hero-foot{
+.hero-foot {
 margin-top:70px;
 display:flex;
 gap:34px;
@@ -228,190 +265,214 @@ flex-wrap:wrap;
 color:#91a7b7;
 font-size:12px;
 letter-spacing:.08em;
-text-transform:uppercase
+text-transform:uppercase;
 }
 
-.hero-foot b{color:#eaf2f7}
+.hero-foot b {
+color:#eaf2f7;
+}
 
-.section{
+/* GENERAL SECTIONS */
+
+.section {
 padding:88px 0;
-border-top:1px solid var(--line)
+border-top:1px solid var(--line);
 }
 
-.section.alt{background:#091f33}
+.section.alt {
+background:#091f33;
+}
 
-.section-head{
+.section-head {
 display:flex;
 justify-content:space-between;
 gap:35px;
 align-items:end;
-margin-bottom:38px
+margin-bottom:38px;
 }
 
-.section-head h2{
+.section-head h2 {
 font-size:clamp(30px,4vw,46px);
 line-height:1.12;
 margin:10px 0 0;
-letter-spacing:-.03em
+letter-spacing:-.03em;
 }
 
-.section-head p{
+.section-head p {
 max-width:480px;
 color:var(--muted);
-margin:0
+margin:0;
 }
 
-.grid{
+/* CARDS */
+
+.grid {
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:16px
+gap:16px;
 }
 
-.card{
+.card {
 padding:26px;
 border:1px solid var(--line);
 background:rgba(255,255,255,.025);
 min-height:205px;
-transition:.2s
+transition:.2s;
 }
 
-.card:hover{
+.card:hover {
 border-color:rgba(32,197,138,.6);
-transform:translateY(-3px)
+transform:translateY(-3px);
 }
 
-.num{
+.num {
 color:var(--green);
 font-size:12px;
 font-weight:800;
-letter-spacing:.15em
+letter-spacing:.15em;
 }
 
-.card h3{
+.card h3 {
 font-size:19px;
-margin:17px 0 8px
+margin:17px 0 8px;
 }
 
-.card p{
+.card p {
 color:var(--muted);
 font-size:14px;
-margin:0
+margin:0;
 }
 
-.split{
+/* ABOUT */
+
+.split {
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:65px;
-align-items:start
+align-items:start;
 }
 
-.statement{
+.statement {
 font-size:clamp(24px,3.2vw,38px);
 line-height:1.28;
 font-weight:650;
 letter-spacing:-.025em;
-margin:0
+margin:0;
 }
 
-.statement span{color:var(--green)}
+.statement span {
+color:var(--green);
+}
 
-.copy{
+.copy {
 color:var(--muted);
-font-size:15px
+font-size:15px;
 }
 
-.pillrow{
+.pillrow {
 display:flex;
 gap:9px;
 flex-wrap:wrap;
-margin-top:24px
+margin-top:24px;
 }
 
-.pill{
+.pill {
 border:1px solid var(--line);
 padding:7px 11px;
 color:#c9d7e0;
-font-size:12px
+font-size:12px;
 }
 
-.layers{
+/* HSE 5.0 FRAMEWORK */
+
+.layers {
 display:grid;
-gap:10px
+gap:10px;
 }
 
-.layer{
+.layer {
 display:flex;
 gap:18px;
 align-items:center;
 border:1px solid var(--line);
 padding:16px 18px;
-background:rgba(255,255,255,.025)
+background:rgba(255,255,255,.025);
 }
 
-.layer strong{
+.layer strong {
 color:var(--green);
 font-size:12px;
-min-width:30px
+min-width:30px;
 }
 
-.layer span{font-size:14px}
+.layer span {
+font-size:14px;
+}
 
-.feature{
+/* COMPANY */
+
+.feature {
 border-left:2px solid var(--green);
 padding:4px 0 4px 18px;
-margin:18px 0
+margin:18px 0;
 }
 
-.feature h3{
+.feature h3 {
 margin:0 0 5px;
-font-size:17px
+font-size:17px;
 }
 
-.feature p{
+.feature p {
 margin:0;
 color:var(--muted);
-font-size:14px
+font-size:14px;
 }
 
-.company{
+.company {
 background:
-linear-gradient(110deg,rgba(32,197,138,.08),transparent 60%),
-#091f33
+linear-gradient(
+110deg,
+rgba(32,197,138,.08),
+transparent 60%
+),
+#091f33;
 }
 
-.company-mark{
+.company-mark {
 font-size:13px;
 letter-spacing:.16em;
 color:var(--green);
-font-weight:800
+font-weight:800;
 }
 
-.company h2{
+.company h2 {
 font-size:clamp(30px,4vw,48px);
 line-height:1.1;
-margin:14px 0
+margin:14px 0;
 }
 
-.tagline{
+.tagline {
 font-size:17px;
-color:#d4e0e8
+color:#d4e0e8;
 }
 
-.notice{
+.notice {
 font-size:12px;
 color:#829aaa;
-margin-top:20px
+margin-top:20px;
 }
 
-.publication{
+/* PUBLICATIONS */
+
+.publication {
 display:grid;
 grid-template-columns:100px 1fr;
 gap:25px;
 padding:26px 0;
-border-top:1px solid var(--line)
+border-top:1px solid var(--line);
 }
 
-.bookmark{
+.bookmark {
 height:132px;
 border:1px solid rgba(32,197,138,.55);
 background:linear-gradient(145deg,#103b50,#071a2c);
@@ -423,92 +484,106 @@ color:var(--green);
 font-size:12px;
 font-weight:800;
 letter-spacing:.1em;
-padding:12px
+padding:12px;
 }
 
-.publication h3{
+.publication h3 {
 font-size:21px;
-margin:0 0 5px
+margin:0 0 5px;
 }
 
-.publication p{
+.publication p {
 color:var(--muted);
 margin:5px 0;
-font-size:14px
+font-size:14px;
 }
 
-.service-list{
+/* SERVICES */
+
+.service-list {
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:12px
+gap:12px;
 }
 
-.service{
+.service {
 border:1px solid var(--line);
-padding:20px
+padding:20px;
 }
 
-.service h3{
+.service h3 {
 margin:0 0 6px;
-font-size:16px
+font-size:16px;
 }
 
-.service p{
+.service p {
 margin:0;
 color:var(--muted);
-font-size:13px
+font-size:13px;
 }
 
-.project-note{
+/* PROJECTS */
+
+.project-note {
 padding:24px;
 border:1px solid var(--line);
 background:rgba(255,255,255,.025);
 color:var(--muted);
-font-size:14px
+font-size:14px;
 }
 
-.contactbox{
+/* CONTACT */
+
+.contactbox {
 display:flex;
 align-items:center;
 justify-content:space-between;
 gap:30px;
 padding:35px;
 border:1px solid rgba(32,197,138,.45);
-background:linear-gradient(120deg,rgba(32,197,138,.09),rgba(255,255,255,.02))
+background:linear-gradient(
+120deg,
+rgba(32,197,138,.09),
+rgba(255,255,255,.02)
+);
 }
 
-.contactbox h2{
+.contactbox h2 {
 font-size:clamp(28px,4vw,42px);
-margin:8px 0
+margin:8px 0;
 }
 
-.contactbox p{
+.contactbox p {
 color:var(--muted);
 margin:0;
-max-width:600px
+max-width:600px;
 }
 
-footer{
+/* FOOTER */
+
+footer {
 padding:28px 0;
 color:#8ca1b1;
 font-size:12px;
-border-top:1px solid var(--line)
+border-top:1px solid var(--line);
 }
 
-.footerrow{
+.footerrow {
 display:flex;
 justify-content:space-between;
 gap:20px;
-flex-wrap:wrap
+flex-wrap:wrap;
 }
 
-.green{color:var(--green)}
+.green {
+color:var(--green);
+}
 
 /* TABLET */
 
-@media(max-width:850px){
+@media(max-width:850px) {
 
-.links{
+.links {
 display:none;
 position:absolute;
 left:0;
@@ -518,76 +593,110 @@ background:#081d30;
 padding:20px 22px 25px;
 border-bottom:1px solid var(--line);
 flex-direction:column;
-align-items:flex-start
+align-items:flex-start;
 }
 
-.links.open{display:flex}
+.links.open {
+display:flex;
+}
 
-.menu{display:block}
+.menu {
+display:block;
+}
 
-.nav-cta{display:none}
+.nav-cta {
+display:none;
+}
 
-.grid{grid-template-columns:repeat(2,1fr)}
+.grid {
+grid-template-columns:repeat(2,1fr);
+}
 
-.section-head{display:block}
+.section-head {
+display:block;
+}
 
-.section-head p{margin-top:15px}
+.section-head p {
+margin-top:15px;
+}
 
-.split{gap:30px}
+.split {
+gap:30px;
+}
 
-.hero{padding:65px 0 75px}
+.hero {
+padding:65px 0 75px;
+}
+
 }
 
 /* MOBILE */
 
-@media(max-width:580px){
+@media(max-width:580px) {
 
-.wrap{
-width:min(var(--max),calc(100% - 32px))
+.wrap {
+width:min(var(--max),calc(100% - 32px));
 }
 
-.grid,.split,.service-list{
-grid-template-columns:1fr
+.grid,
+.split,
+.service-list {
+grid-template-columns:1fr;
 }
 
-.section{padding:65px 0}
+.section {
+padding:65px 0;
+}
 
-.hero{padding:42px 0 65px}
+.hero {
+padding:42px 0 65px;
+}
 
-.hero-banner{margin-bottom:30px}
+.hero-banner {
+margin-bottom:30px;
+}
 
-.hero-foot{
+.hero-foot {
 gap:14px;
 flex-direction:column;
-margin-top:45px
+margin-top:45px;
 }
 
-.publication{
+.publication {
 grid-template-columns:76px 1fr;
-gap:16px
+gap:16px;
 }
 
-.bookmark{
+.bookmark {
 height:112px;
-font-size:10px
+font-size:10px;
 }
 
-.contactbox{
+.contactbox {
 display:block;
-padding:24px
+padding:24px;
 }
 
-.contactbox .btn{margin-top:22px}
-
-.card{min-height:0}
+.contactbox .btn {
+margin-top:22px;
 }
 
-@media(prefers-reduced-motion:reduce){
+.card {
+min-height:0;
+}
 
-html{scroll-behavior:auto}
+}
 
-*,*:before,*:after{
-transition:none!important
+@media(prefers-reduced-motion:reduce) {
+
+html {
+scroll-behavior:auto;
+}
+
+*,
+*:before,
+*:after {
+transition:none!important;
 }
 
 }
@@ -597,6 +706,7 @@ transition:none!important
 <body>
 
 <a class="skip" href="#main">Skip to content</a>
+
 <div class="topline"></div>
 
 <header>
@@ -616,27 +726,35 @@ MAJID <span>ROSHAN</span>
 <a href="#contact">Contact</a>
 </nav>
 
-<a class="nav-cta" href="#contact">GET IN TOUCH ↗</a>
+<a class="nav-cta" href="#contact">
+GET IN TOUCH ↗
+</a>
 
-<button class="menu" id="menu-toggle"
+<button
+class="menu"
+id="menu-toggle"
 aria-label="Open navigation"
 aria-controls="site-nav"
-aria-expanded="false">☰</button>
+aria-expanded="false">
+☰
+</button>
 
 </div>
 </header>
 
 <main id="main">
 
-<!-- HOME / HERO -->
+<!-- HOME -->
 
 <section class="hero" id="home">
 <div class="wrap">
 
+<!-- MAIN PROFILE IMAGE -->
 <div class="hero-banner">
 <img
-src="majid-roshan.png"
-alt="Majid Roshan — Founder and HSE 5.0 Visionary; HSE 5.0: The Future of Safety">
+src="./majid-roshan.jpg.png"
+alt="Majid Roshan — Founder and HSE 5.0 Visionary"
+>
 </div>
 
 <div class="eyebrow">
@@ -653,8 +771,13 @@ Majid Roshan is an HSE leader, author and the originator of the HSE 5.0 vision �
 </p>
 
 <div class="hero-actions">
-<a class="btn primary" href="#vision">EXPLORE HSE 5.0 ↗</a>
-<a class="btn secondary" href="#about">ABOUT MAJID ROSHAN</a>
+<a class="btn primary" href="#vision">
+EXPLORE HSE 5.0 ↗
+</a>
+
+<a class="btn secondary" href="#about">
+ABOUT MAJID ROSHAN
+</a>
 </div>
 
 <div class="hero-foot">
@@ -685,6 +808,7 @@ Bringing operational HSE experience, systems thinking and a forward-looking safe
 <div class="split">
 
 <div>
+
 <p class="statement">
 “Safety must evolve from <span>reacting to events</span> to understanding risk before harm occurs.”
 </p>
@@ -695,9 +819,11 @@ Bringing operational HSE experience, systems thinking and a forward-looking safe
 <span class="pill">Crisis Management</span>
 <span class="pill">Operational Resilience</span>
 </div>
+
 </div>
 
 <div class="copy">
+
 <p>
 Majid Roshan works across industrial health, safety and environment, with professional experience connected to major steelmaking, direct-reduction and industrial development activities.
 </p>
@@ -709,13 +835,13 @@ His professional interests focus on strengthening HSE governance, critical risk 
 <p>
 The HSE 5.0 vision brings these elements into a coherent direction: predictive capability supported by human judgement, transparent governance and resilient operational systems.
 </p>
-</div>
 
+</div>
 </div>
 </div>
 </section>
 
-<!-- HSE 5.0 VISION -->
+<!-- HSE 5.0 -->
 
 <section class="section alt" id="vision">
 <div class="wrap">
@@ -734,6 +860,7 @@ A strategic vision for the next evolution of health, safety and environmental ma
 <div class="split">
 
 <div>
+
 <p class="statement">
 A transition toward <span>predictive, human-centric, connected and autonomous safety</span> — with people and responsible governance at the centre.
 </p>
@@ -741,16 +868,37 @@ A transition toward <span>predictive, human-centric, connected and autonomous sa
 <p class="copy">
 HSE 5.0 is presented as an integrated management vision and framework. It is not a claim that a finished commercial software platform is currently operational.
 </p>
+
 </div>
 
 <div class="layers">
-<div class="layer"><strong>01</strong><span>Reactive — learning from incidents and losses</span></div>
-<div class="layer"><strong>02</strong><span>Preventive — identifying hazards and controlling risk</span></div>
-<div class="layer"><strong>03</strong><span>Digital — connecting information and operational systems</span></div>
-<div class="layer"><strong>04</strong><span>Predictive — interpreting patterns and weak signals</span></div>
-<div class="layer"><strong>05</strong><span>HSE 5.0 — human-centric, connected and resilient safety</span></div>
+
+<div class="layer">
+<strong>01</strong>
+<span>Reactive — learning from incidents and losses</span>
 </div>
 
+<div class="layer">
+<strong>02</strong>
+<span>Preventive — identifying hazards and controlling risk</span>
+</div>
+
+<div class="layer">
+<strong>03</strong>
+<span>Digital — connecting information and operational systems</span>
+</div>
+
+<div class="layer">
+<strong>04</strong>
+<span>Predictive — interpreting patterns and weak signals</span>
+</div>
+
+<div class="layer">
+<strong>05</strong>
+<span>HSE 5.0 — human-centric, connected and resilient safety</span>
+</div>
+
+</div>
 </div>
 
 <div class="grid" style="margin-top:34px">
@@ -790,9 +938,14 @@ Connect governance, operations, technology and learning to strengthen organizati
 
 <div class="eyebrow">03 / Organization</div>
 
-<div class="company-mark">GLOBAL HSE 5.0 COMPANY</div>
+<div class="company-mark">
+GLOBAL HSE 5.0 COMPANY
+</div>
 
-<h2>Building the framework<br>for the future of safety.</h2>
+<h2>
+Building the framework<br>
+for the future of safety.
+</h2>
 
 <p class="tagline">
 A developing initiative focused on the global advancement of HSE 5.0.
@@ -801,6 +954,7 @@ A developing initiative focused on the global advancement of HSE 5.0.
 <div class="split" style="margin-top:30px">
 
 <div class="copy">
+
 <p>
 Global HSE 5.0 Company is the organizational identity associated with the development and advancement of the HSE 5.0 vision, its framework, protocols, knowledge products and future implementation pathways.
 </p>
@@ -808,6 +962,7 @@ Global HSE 5.0 Company is the organizational identity associated with the develo
 <p>
 The initiative is currently at the concept, architecture and specialized documentation stage. Any future technology development, pilots or implementation partnerships will be identified transparently as they are established.
 </p>
+
 </div>
 
 <div>
@@ -855,15 +1010,20 @@ Books and professional writing exploring the future of industrial safety and HSE
 
 <div class="publication">
 
-<div class="bookmark">HSE<br>5.0</div>
+<div class="bookmark">
+HSE<br>5.0
+</div>
 
 <div>
+
 <div class="eyebrow">Featured Book · 2026</div>
 
 <h3>HSE 5.0 – The Future of Safety</h3>
 
 <p>
-<em>From Reactive Safety to Predictive, Human-Centric, Connected and Autonomous Safety</em>
+<em>
+From Reactive Safety to Predictive, Human-Centric, Connected and Autonomous Safety
+</em>
 </p>
 
 <p>
@@ -873,15 +1033,18 @@ A framework-oriented exploration of the next evolution of HSE management, integr
 <p class="notice">
 Author: Majid Roshan · Publication status and edition details to be updated when formally released.
 </p>
-</div>
 
+</div>
 </div>
 
 <div class="publication">
 
-<div class="bookmark">INDUSTRIAL<br>HSE</div>
+<div class="bookmark">
+INDUSTRIAL<br>HSE
+</div>
 
 <div>
+
 <div class="eyebrow">Research & Professional Articles</div>
 
 <h3>Industrial HSE, AI & Predictive Safety</h3>
@@ -889,8 +1052,8 @@ Author: Majid Roshan · Publication status and edition details to be updated whe
 <p>
 Professional perspectives on AI accountability, weak signals, critical controls, safety culture, human factors and the changing role of HSE professionals.
 </p>
-</div>
 
+</div>
 </div>
 
 </div>
@@ -904,7 +1067,10 @@ Professional perspectives on AI accountability, weak signals, critical controls,
 <div class="section-head">
 <div>
 <div class="eyebrow">05 / Professional Focus</div>
-<h2>Strategic expertise.<br>Operational perspective.</h2>
+<h2>
+Strategic expertise.<br>
+Operational perspective.
+</h2>
 </div>
 
 <p>
@@ -973,7 +1139,10 @@ The scope of any professional engagement is subject to mutual agreement, defined
 <div class="section-head">
 <div>
 <div class="eyebrow">06 / Selected Experience & Initiatives</div>
-<h2>Industrial context.<br>Systems perspective.</h2>
+<h2>
+Industrial context.<br>
+Systems perspective.
+</h2>
 </div>
 
 <p>
@@ -1024,9 +1193,14 @@ Project descriptions on this website are concise summaries of professional exper
 <div class="contactbox">
 
 <div>
-<div class="eyebrow">07 / Contact & Collaboration</div>
 
-<h2>Let's advance the future of safety.</h2>
+<div class="eyebrow">
+07 / Contact & Collaboration
+</div>
+
+<h2>
+Let's advance the future of safety.
+</h2>
 
 <p>
 For professional dialogue, publishing enquiries, speaking opportunities and potential collaboration related to HSE 5.0 and industrial safety.
@@ -1035,12 +1209,15 @@ For professional dialogue, publishing enquiries, speaking opportunities and pote
 <p class="notice">
 Official email and verified professional profile links will be added here once confirmed.
 </p>
+
 </div>
 
-<a class="btn primary"
+<a
+class="btn primary"
 href="https://github.com/majidroshan4869-lgtm"
 target="_blank"
-rel="noopener noreferrer">
+rel="noopener noreferrer"
+>
 GITHUB PROFILE ↗
 </a>
 
@@ -1061,7 +1238,9 @@ GITHUB PROFILE ↗
 
 <span>
 Founder & HSE 5.0 Visionary ·
-<span class="green">From Reactive Safety to Predictive Safety</span>
+<span class="green">
+From Reactive Safety to Predictive Safety
+</span>
 </span>
 
 </div>
@@ -1074,7 +1253,7 @@ Founder & HSE 5.0 Visionary ·
 const btn=document.getElementById('menu-toggle');
 const nav=document.getElementById('site-nav');
 
-if(btn&&nav){
+if(btn && nav){
 
 const close=()=>{
 nav.classList.remove('open');
