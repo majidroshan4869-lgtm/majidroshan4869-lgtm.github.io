@@ -24,204 +24,587 @@
 --red:#e35b62;
 --max:1160px;
 }
+
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:88px}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:88px
+}
+
 body{
-margin:0;background:var(--navy);color:var(--white);
-font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65
+margin:0;
+background:var(--navy);
+color:var(--white);
+font-family:Inter,Segoe UI,Arial,sans-serif;
+line-height:1.65
 }
+
 a{color:inherit;text-decoration:none}
+
 a:focus-visible,button:focus-visible{
-outline:3px solid var(--green);outline-offset:4px
+outline:3px solid var(--green);
+outline-offset:4px
 }
-.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+
+.wrap{
+width:min(var(--max),calc(100% - 44px));
+margin:auto
+}
+
 .skip{
-position:absolute;left:-9999px;top:8px;background:#fff;
-color:#000;padding:10px;z-index:99
+position:absolute;
+left:-9999px;
+top:8px;
+background:#fff;
+color:#000;
+padding:10px;
+z-index:99
 }
+
 .skip:focus{left:10px}
+
 .topline{
 height:4px;
 background:linear-gradient(90deg,var(--green) 0 62%,var(--red) 62% 65%,transparent 65%)
 }
+
 header{
-position:sticky;top:0;z-index:20;
+position:sticky;
+top:0;
+z-index:20;
 background:rgba(7,26,44,.94);
 backdrop-filter:blur(14px);
 border-bottom:1px solid var(--line)
 }
+
 .nav{
-min-height:76px;display:flex;align-items:center;
-justify-content:space-between;gap:24px
+min-height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:24px
 }
-.brand{font-weight:800;letter-spacing:.08em;font-size:15px}
+
+.brand{
+font-weight:800;
+letter-spacing:.08em;
+font-size:15px
+}
+
 .brand span{color:var(--green)}
+
 .links{
-display:flex;gap:22px;align-items:center;
-font-size:13px;color:#d5e0e8
+display:flex;
+gap:22px;
+align-items:center;
+font-size:13px;
+color:#d5e0e8
 }
+
 .links a:hover{color:var(--green)}
+
 .nav-cta,.btn{
-display:inline-flex;align-items:center;justify-content:center;
-border:1px solid var(--green);padding:11px 17px;
-border-radius:4px;font-weight:700;font-size:13px;transition:.2s
+display:inline-flex;
+align-items:center;
+justify-content:center;
+border:1px solid var(--green);
+padding:11px 17px;
+border-radius:4px;
+font-weight:700;
+font-size:13px;
+transition:.2s
 }
-.nav-cta,.btn.primary{background:var(--green);color:#052218}
-.btn:hover,.nav-cta:hover{transform:translateY(-2px);filter:brightness(1.06)}
+
+.nav-cta,.btn.primary{
+background:var(--green);
+color:#052218
+}
+
+.btn:hover,.nav-cta:hover{
+transform:translateY(-2px);
+filter:brightness(1.06)
+}
+
 .menu{
-display:none;background:none;color:white;border:1px solid var(--line);
-padding:8px 11px;border-radius:4px;font-size:20px
+display:none;
+background:none;
+color:white;
+border:1px solid var(--line);
+padding:8px 11px;
+border-radius:4px;
+font-size:20px
 }
+
+/* HERO SECTION AND MAIN IMAGE */
+
 .hero{
-position:relative;overflow:hidden;padding:112px 0 100px;
-background:radial-gradient(ellipse at 78% 30%,rgba(32,197,138,.13),transparent 35%),linear-gradient(135deg,#071a2c,#0a2339 65%,#071a2c)
+position:relative;
+overflow:hidden;
+padding:85px 0 100px;
+background:
+radial-gradient(ellipse at 78% 30%,rgba(32,197,138,.13),transparent 35%),
+linear-gradient(135deg,#071a2c,#0a2339 65%,#071a2c)
 }
+
+.hero .wrap{
+position:relative;
+z-index:1
+}
+
+.hero-banner{
+width:100%;
+max-width:1160px;
+margin:0 auto 42px;
+background:#071a2c;
+border:1px solid rgba(255,255,255,.12);
+box-shadow:0 18px 48px rgba(0,0,0,.28)
+}
+
+.hero-banner img{
+display:block;
+width:100%;
+height:auto;
+object-fit:contain
+}
+
 .hero:after{
-content:"";position:absolute;width:480px;height:480px;
-border:1px solid rgba(32,197,138,.13);border-radius:50%;
-right:-100px;top:35px;
-box-shadow:0 0 0 55px rgba(32,197,138,.025),0 0 0 110px rgba(32,197,138,.02)
+content:"";
+position:absolute;
+width:480px;
+height:480px;
+pointer-events:none;
+z-index:0;
+border:1px solid rgba(32,197,138,.13);
+border-radius:50%;
+right:-100px;
+top:35px;
+box-shadow:
+0 0 0 55px rgba(32,197,138,.025),
+0 0 0 110px rgba(32,197,138,.02)
 }
+
 .eyebrow{
-color:var(--green);font-size:12px;font-weight:800;
-letter-spacing:.2em;text-transform:uppercase
+color:var(--green);
+font-size:12px;
+font-weight:800;
+letter-spacing:.2em;
+text-transform:uppercase
 }
+
 .hero h1{
-font-size:clamp(42px,7vw,78px);line-height:1.04;
-letter-spacing:-.045em;max-width:850px;margin:22px 0
+font-size:clamp(42px,7vw,78px);
+line-height:1.04;
+letter-spacing:-.045em;
+max-width:850px;
+margin:22px 0
 }
+
 .hero h1 span{color:var(--green)}
+
 .hero .lead{
-font-size:clamp(17px,2vw,21px);color:#c2d0da;max-width:720px
+font-size:clamp(17px,2vw,21px);
+color:#c2d0da;
+max-width:720px
 }
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
-.btn.secondary{border-color:rgba(255,255,255,.3);color:white}
+
+.hero-actions{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:34px
+}
+
+.btn.secondary{
+border-color:rgba(255,255,255,.3);
+color:white
+}
+
 .hero-foot{
-margin-top:70px;display:flex;gap:34px;flex-wrap:wrap;
-color:#91a7b7;font-size:12px;letter-spacing:.08em;text-transform:uppercase
+margin-top:70px;
+display:flex;
+gap:34px;
+flex-wrap:wrap;
+color:#91a7b7;
+font-size:12px;
+letter-spacing:.08em;
+text-transform:uppercase
 }
+
 .hero-foot b{color:#eaf2f7}
-.section{padding:88px 0;border-top:1px solid var(--line)}
+
+.section{
+padding:88px 0;
+border-top:1px solid var(--line)
+}
+
 .section.alt{background:#091f33}
+
 .section-head{
-display:flex;justify-content:space-between;gap:35px;
-align-items:end;margin-bottom:38px
+display:flex;
+justify-content:space-between;
+gap:35px;
+align-items:end;
+margin-bottom:38px
 }
+
 .section-head h2{
-font-size:clamp(30px,4vw,46px);line-height:1.12;
-margin:10px 0 0;letter-spacing:-.03em
+font-size:clamp(30px,4vw,46px);
+line-height:1.12;
+margin:10px 0 0;
+letter-spacing:-.03em
 }
-.section-head p{max-width:480px;color:var(--muted);margin:0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+.section-head p{
+max-width:480px;
+color:var(--muted);
+margin:0
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px
+}
+
 .card{
-padding:26px;border:1px solid var(--line);
-background:rgba(255,255,255,.025);min-height:205px;transition:.2s
+padding:26px;
+border:1px solid var(--line);
+background:rgba(255,255,255,.025);
+min-height:205px;
+transition:.2s
 }
-.card:hover{border-color:rgba(32,197,138,.6);transform:translateY(-3px)}
-.num{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.15em}
-.card h3{font-size:19px;margin:17px 0 8px}
-.card p{color:var(--muted);font-size:14px;margin:0}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:start}
+
+.card:hover{
+border-color:rgba(32,197,138,.6);
+transform:translateY(-3px)
+}
+
+.num{
+color:var(--green);
+font-size:12px;
+font-weight:800;
+letter-spacing:.15em
+}
+
+.card h3{
+font-size:19px;
+margin:17px 0 8px
+}
+
+.card p{
+color:var(--muted);
+font-size:14px;
+margin:0
+}
+
+.split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:65px;
+align-items:start
+}
+
 .statement{
-font-size:clamp(24px,3.2vw,38px);line-height:1.28;
-font-weight:650;letter-spacing:-.025em;margin:0
+font-size:clamp(24px,3.2vw,38px);
+line-height:1.28;
+font-weight:650;
+letter-spacing:-.025em;
+margin:0
 }
+
 .statement span{color:var(--green)}
-.copy{color:var(--muted);font-size:15px}
-.pillrow{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}
-.pill{border:1px solid var(--line);padding:7px 11px;color:#c9d7e0;font-size:12px}
-.layers{display:grid;gap:10px}
+
+.copy{
+color:var(--muted);
+font-size:15px
+}
+
+.pillrow{
+display:flex;
+gap:9px;
+flex-wrap:wrap;
+margin-top:24px
+}
+
+.pill{
+border:1px solid var(--line);
+padding:7px 11px;
+color:#c9d7e0;
+font-size:12px
+}
+
+.layers{
+display:grid;
+gap:10px
+}
+
 .layer{
-display:flex;gap:18px;align-items:center;
-border:1px solid var(--line);padding:16px 18px;
+display:flex;
+gap:18px;
+align-items:center;
+border:1px solid var(--line);
+padding:16px 18px;
 background:rgba(255,255,255,.025)
 }
-.layer strong{color:var(--green);font-size:12px;min-width:30px}
+
+.layer strong{
+color:var(--green);
+font-size:12px;
+min-width:30px
+}
+
 .layer span{font-size:14px}
-.feature{border-left:2px solid var(--green);padding:4px 0 4px 18px;margin:18px 0}
-.feature h3{margin:0 0 5px;font-size:17px}
-.feature p{margin:0;color:var(--muted);font-size:14px}
+
+.feature{
+border-left:2px solid var(--green);
+padding:4px 0 4px 18px;
+margin:18px 0
+}
+
+.feature h3{
+margin:0 0 5px;
+font-size:17px
+}
+
+.feature p{
+margin:0;
+color:var(--muted);
+font-size:14px
+}
+
 .company{
-background:linear-gradient(110deg,rgba(32,197,138,.08),transparent 60%),#091f33
+background:
+linear-gradient(110deg,rgba(32,197,138,.08),transparent 60%),
+#091f33
 }
-.company-mark{font-size:13px;letter-spacing:.16em;color:var(--green);font-weight:800}
-.company h2{font-size:clamp(30px,4vw,48px);line-height:1.1;margin:14px 0}
-.tagline{font-size:17px;color:#d4e0e8}
-.notice{font-size:12px;color:#829aaa;margin-top:20px}
+
+.company-mark{
+font-size:13px;
+letter-spacing:.16em;
+color:var(--green);
+font-weight:800
+}
+
+.company h2{
+font-size:clamp(30px,4vw,48px);
+line-height:1.1;
+margin:14px 0
+}
+
+.tagline{
+font-size:17px;
+color:#d4e0e8
+}
+
+.notice{
+font-size:12px;
+color:#829aaa;
+margin-top:20px
+}
+
 .publication{
-display:grid;grid-template-columns:100px 1fr;gap:25px;
-padding:26px 0;border-top:1px solid var(--line)
+display:grid;
+grid-template-columns:100px 1fr;
+gap:25px;
+padding:26px 0;
+border-top:1px solid var(--line)
 }
+
 .bookmark{
-height:132px;border:1px solid rgba(32,197,138,.55);
+height:132px;
+border:1px solid rgba(32,197,138,.55);
 background:linear-gradient(145deg,#103b50,#071a2c);
-display:flex;align-items:center;justify-content:center;
-text-align:center;color:var(--green);font-size:12px;
-font-weight:800;letter-spacing:.1em;padding:12px
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:var(--green);
+font-size:12px;
+font-weight:800;
+letter-spacing:.1em;
+padding:12px
 }
-.publication h3{font-size:21px;margin:0 0 5px}
-.publication p{color:var(--muted);margin:5px 0;font-size:14px}
-.service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.service{border:1px solid var(--line);padding:20px}
-.service h3{margin:0 0 6px;font-size:16px}
-.service p{margin:0;color:var(--muted);font-size:13px}
+
+.publication h3{
+font-size:21px;
+margin:0 0 5px
+}
+
+.publication p{
+color:var(--muted);
+margin:5px 0;
+font-size:14px
+}
+
+.service-list{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px
+}
+
+.service{
+border:1px solid var(--line);
+padding:20px
+}
+
+.service h3{
+margin:0 0 6px;
+font-size:16px
+}
+
+.service p{
+margin:0;
+color:var(--muted);
+font-size:13px
+}
+
 .project-note{
-padding:24px;border:1px solid var(--line);
-background:rgba(255,255,255,.025);color:var(--muted);font-size:14px
+padding:24px;
+border:1px solid var(--line);
+background:rgba(255,255,255,.025);
+color:var(--muted);
+font-size:14px
 }
+
 .contactbox{
-display:flex;align-items:center;justify-content:space-between;
-gap:30px;padding:35px;border:1px solid rgba(32,197,138,.45);
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+padding:35px;
+border:1px solid rgba(32,197,138,.45);
 background:linear-gradient(120deg,rgba(32,197,138,.09),rgba(255,255,255,.02))
 }
-.contactbox h2{font-size:clamp(28px,4vw,42px);margin:8px 0}
-.contactbox p{color:var(--muted);margin:0;max-width:600px}
-footer{padding:28px 0;color:#8ca1b1;font-size:12px;border-top:1px solid var(--line)}
-.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.contactbox h2{
+font-size:clamp(28px,4vw,42px);
+margin:8px 0
+}
+
+.contactbox p{
+color:var(--muted);
+margin:0;
+max-width:600px
+}
+
+footer{
+padding:28px 0;
+color:#8ca1b1;
+font-size:12px;
+border-top:1px solid var(--line)
+}
+
+.footerrow{
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap
+}
+
 .green{color:var(--green)}
 
+/* TABLET */
+
 @media(max-width:850px){
+
 .links{
-display:none;position:absolute;left:0;right:0;top:76px;
-background:#081d30;padding:20px 22px 25px;
+display:none;
+position:absolute;
+left:0;
+right:0;
+top:76px;
+background:#081d30;
+padding:20px 22px 25px;
 border-bottom:1px solid var(--line);
-flex-direction:column;align-items:flex-start
+flex-direction:column;
+align-items:flex-start
 }
+
 .links.open{display:flex}
+
 .menu{display:block}
+
 .nav-cta{display:none}
+
 .grid{grid-template-columns:repeat(2,1fr)}
+
 .section-head{display:block}
+
 .section-head p{margin-top:15px}
+
 .split{gap:30px}
-.hero{padding:85px 0 75px}
+
+.hero{padding:65px 0 75px}
 }
+
+/* MOBILE */
+
 @media(max-width:580px){
-.wrap{width:min(var(--max),calc(100% - 32px))}
-.grid,.split,.service-list{grid-template-columns:1fr}
+
+.wrap{
+width:min(var(--max),calc(100% - 32px))
+}
+
+.grid,.split,.service-list{
+grid-template-columns:1fr
+}
+
 .section{padding:65px 0}
-.hero{padding:72px 0 65px}
-.hero-foot{gap:14px;flex-direction:column;margin-top:45px}
-.publication{grid-template-columns:76px 1fr;gap:16px}
-.bookmark{height:112px;font-size:10px}
-.contactbox{display:block;padding:24px}
+
+.hero{padding:42px 0 65px}
+
+.hero-banner{margin-bottom:30px}
+
+.hero-foot{
+gap:14px;
+flex-direction:column;
+margin-top:45px
+}
+
+.publication{
+grid-template-columns:76px 1fr;
+gap:16px
+}
+
+.bookmark{
+height:112px;
+font-size:10px
+}
+
+.contactbox{
+display:block;
+padding:24px
+}
+
 .contactbox .btn{margin-top:22px}
+
 .card{min-height:0}
 }
+
 @media(prefers-reduced-motion:reduce){
+
 html{scroll-behavior:auto}
-*,*:before,*:after{transition:none!important}
+
+*,*:before,*:after{
+transition:none!important
+}
+
 }
 </style>
 </head>
 
 <body>
+
 <a class="skip" href="#main">Skip to content</a>
 <div class="topline"></div>
 
 <header>
 <div class="wrap nav">
-<a class="brand" href="#home" aria-label="Majid Roshan home">MAJID <span>ROSHAN</span></a>
+
+<a class="brand" href="#home" aria-label="Majid Roshan home">
+MAJID <span>ROSHAN</span>
+</a>
 
 <nav class="links" id="site-nav" aria-label="Main navigation">
 <a href="#about">About</a>
@@ -234,17 +617,40 @@ html{scroll-behavior:auto}
 </nav>
 
 <a class="nav-cta" href="#contact">GET IN TOUCH ↗</a>
-<button class="menu" id="menu-toggle" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false">☰</button>
+
+<button class="menu" id="menu-toggle"
+aria-label="Open navigation"
+aria-controls="site-nav"
+aria-expanded="false">☰</button>
+
 </div>
 </header>
 
 <main id="main">
 
+<!-- HOME / HERO -->
+
 <section class="hero" id="home">
 <div class="wrap">
-<div class="eyebrow">Industrial HSE · Risk · Resilience · AI</div>
-<h1>From Reactive Safety<br>to <span>Predictive Safety.</span></h1>
-<p class="lead">Majid Roshan is an HSE leader, author and the originator of the HSE 5.0 vision — advancing a more predictive, human-centric, connected and resilient approach to safety.</p>
+
+<div class="hero-banner">
+<img
+src="majid-roshan.png"
+alt="Majid Roshan — Founder and HSE 5.0 Visionary; HSE 5.0: The Future of Safety">
+</div>
+
+<div class="eyebrow">
+Industrial HSE · Risk · Resilience · AI
+</div>
+
+<h1>
+From Reactive Safety<br>
+to <span>Predictive Safety.</span>
+</h1>
+
+<p class="lead">
+Majid Roshan is an HSE leader, author and the originator of the HSE 5.0 vision — advancing a more predictive, human-centric, connected and resilient approach to safety.
+</p>
 
 <div class="hero-actions">
 <a class="btn primary" href="#vision">EXPLORE HSE 5.0 ↗</a>
@@ -256,22 +662,33 @@ html{scroll-behavior:auto}
 <span><b>Industrial</b> High-Risk Operations</span>
 <span><b>Human-Centric</b> Predictive Safety</span>
 </div>
+
 </div>
 </section>
 
+<!-- ABOUT -->
+
 <section class="section" id="about">
 <div class="wrap">
+
 <div class="section-head">
 <div>
 <div class="eyebrow">01 / About</div>
 <h2>Leadership shaped<br>by high-risk industries.</h2>
 </div>
-<p>Bringing operational HSE experience, systems thinking and a forward-looking safety vision together.</p>
+
+<p>
+Bringing operational HSE experience, systems thinking and a forward-looking safety vision together.
+</p>
 </div>
 
 <div class="split">
+
 <div>
-<p class="statement">“Safety must evolve from <span>reacting to events</span> to understanding risk before harm occurs.”</p>
+<p class="statement">
+“Safety must evolve from <span>reacting to events</span> to understanding risk before harm occurs.”
+</p>
+
 <div class="pillrow">
 <span class="pill">HSE Leadership</span>
 <span class="pill">Risk Management</span>
@@ -281,28 +698,49 @@ html{scroll-behavior:auto}
 </div>
 
 <div class="copy">
-<p>Majid Roshan works across industrial health, safety and environment, with professional experience connected to major steelmaking, direct-reduction and industrial development activities.</p>
-<p>His professional interests focus on strengthening HSE governance, critical risk control, workforce participation and the responsible use of digital technologies and artificial intelligence in safety management.</p>
-<p>The HSE 5.0 vision brings these elements into a coherent direction: predictive capability supported by human judgement, transparent governance and resilient operational systems.</p>
+<p>
+Majid Roshan works across industrial health, safety and environment, with professional experience connected to major steelmaking, direct-reduction and industrial development activities.
+</p>
+
+<p>
+His professional interests focus on strengthening HSE governance, critical risk control, workforce participation and the responsible use of digital technologies and artificial intelligence in safety management.
+</p>
+
+<p>
+The HSE 5.0 vision brings these elements into a coherent direction: predictive capability supported by human judgement, transparent governance and resilient operational systems.
+</p>
 </div>
+
 </div>
 </div>
 </section>
 
+<!-- HSE 5.0 VISION -->
+
 <section class="section alt" id="vision">
 <div class="wrap">
+
 <div class="section-head">
 <div>
 <div class="eyebrow">02 / The Vision</div>
 <h2>HSE 5.0™</h2>
 </div>
-<p>A strategic vision for the next evolution of health, safety and environmental management.</p>
+
+<p>
+A strategic vision for the next evolution of health, safety and environmental management.
+</p>
 </div>
 
 <div class="split">
+
 <div>
-<p class="statement">A transition toward <span>predictive, human-centric, connected and autonomous safety</span> — with people and responsible governance at the centre.</p>
-<p class="copy">HSE 5.0 is presented as an integrated management vision and framework. It is not a claim that a finished commercial software platform is currently operational.</p>
+<p class="statement">
+A transition toward <span>predictive, human-centric, connected and autonomous safety</span> — with people and responsible governance at the centre.
+</p>
+
+<p class="copy">
+HSE 5.0 is presented as an integrated management vision and framework. It is not a claim that a finished commercial software platform is currently operational.
+</p>
 </div>
 
 <div class="layers">
@@ -312,192 +750,324 @@ html{scroll-behavior:auto}
 <div class="layer"><strong>04</strong><span>Predictive — interpreting patterns and weak signals</span></div>
 <div class="layer"><strong>05</strong><span>HSE 5.0 — human-centric, connected and resilient safety</span></div>
 </div>
+
 </div>
 
 <div class="grid" style="margin-top:34px">
+
 <article class="card">
 <div class="num">CORE 01</div>
 <h3>Predictive Intelligence</h3>
-<p>Use risk signals, data and analytical methods to support earlier and better-informed interventions.</p>
+<p>
+Use risk signals, data and analytical methods to support earlier and better-informed interventions.
+</p>
 </article>
+
 <article class="card">
 <div class="num">CORE 02</div>
 <h3>Human-Centric Design</h3>
-<p>Keep human capability, worker participation, competence and judgement central to safety decisions.</p>
+<p>
+Keep human capability, worker participation, competence and judgement central to safety decisions.
+</p>
 </article>
+
 <article class="card">
 <div class="num">CORE 03</div>
 <h3>Connected Resilience</h3>
-<p>Connect governance, operations, technology and learning to strengthen organizational resilience.</p>
+<p>
+Connect governance, operations, technology and learning to strengthen organizational resilience.
+</p>
 </article>
+
 </div>
 </div>
 </section>
 
+<!-- COMPANY -->
+
 <section class="section company" id="company">
 <div class="wrap">
+
 <div class="eyebrow">03 / Organization</div>
+
 <div class="company-mark">GLOBAL HSE 5.0 COMPANY</div>
+
 <h2>Building the framework<br>for the future of safety.</h2>
-<p class="tagline">A developing initiative focused on the global advancement of HSE 5.0.</p>
+
+<p class="tagline">
+A developing initiative focused on the global advancement of HSE 5.0.
+</p>
 
 <div class="split" style="margin-top:30px">
+
 <div class="copy">
-<p>Global HSE 5.0 Company is the organizational identity associated with the development and advancement of the HSE 5.0 vision, its framework, protocols, knowledge products and future implementation pathways.</p>
-<p>The initiative is currently at the concept, architecture and specialized documentation stage. Any future technology development, pilots or implementation partnerships will be identified transparently as they are established.</p>
+<p>
+Global HSE 5.0 Company is the organizational identity associated with the development and advancement of the HSE 5.0 vision, its framework, protocols, knowledge products and future implementation pathways.
+</p>
+
+<p>
+The initiative is currently at the concept, architecture and specialized documentation stage. Any future technology development, pilots or implementation partnerships will be identified transparently as they are established.
+</p>
 </div>
 
 <div>
+
 <div class="feature">
 <h3>Framework Development</h3>
 <p>Conceptual architecture, principles and implementation guidance.</p>
 </div>
+
 <div class="feature">
 <h3>Knowledge & Publications</h3>
 <p>Research-informed professional content and specialist publications.</p>
 </div>
+
 <div class="feature">
 <h3>Future Collaboration</h3>
 <p>Opportunities for qualified institutional, industrial and research partners.</p>
 </div>
+
 </div>
 </div>
 
-<p class="notice">HSE 5.0™ is used here as the name of the author's vision and framework. Trademark registration or third-party endorsement is not implied.</p>
+<p class="notice">
+HSE 5.0™ is used here as the name of the author's vision and framework. Trademark registration or third-party endorsement is not implied.
+</p>
+
 </div>
 </section>
 
+<!-- PUBLICATIONS -->
+
 <section class="section" id="publications">
 <div class="wrap">
+
 <div class="section-head">
 <div>
 <div class="eyebrow">04 / Publications</div>
 <h2>Ideas into knowledge.</h2>
 </div>
-<p>Books and professional writing exploring the future of industrial safety and HSE management.</p>
+
+<p>
+Books and professional writing exploring the future of industrial safety and HSE management.
+</p>
 </div>
 
 <div class="publication">
+
 <div class="bookmark">HSE<br>5.0</div>
+
 <div>
 <div class="eyebrow">Featured Book · 2026</div>
+
 <h3>HSE 5.0 – The Future of Safety</h3>
-<p><em>From Reactive Safety to Predictive, Human-Centric, Connected and Autonomous Safety</em></p>
-<p>A framework-oriented exploration of the next evolution of HSE management, integrating people, risk, data, digital capabilities and organizational resilience.</p>
-<p class="notice">Author: Majid Roshan · Publication status and edition details to be updated when formally released.</p>
+
+<p>
+<em>From Reactive Safety to Predictive, Human-Centric, Connected and Autonomous Safety</em>
+</p>
+
+<p>
+A framework-oriented exploration of the next evolution of HSE management, integrating people, risk, data, digital capabilities and organizational resilience.
+</p>
+
+<p class="notice">
+Author: Majid Roshan · Publication status and edition details to be updated when formally released.
+</p>
 </div>
+
 </div>
 
 <div class="publication">
+
 <div class="bookmark">INDUSTRIAL<br>HSE</div>
+
 <div>
 <div class="eyebrow">Research & Professional Articles</div>
+
 <h3>Industrial HSE, AI & Predictive Safety</h3>
-<p>Professional perspectives on AI accountability, weak signals, critical controls, safety culture, human factors and the changing role of HSE professionals.</p>
+
+<p>
+Professional perspectives on AI accountability, weak signals, critical controls, safety culture, human factors and the changing role of HSE professionals.
+</p>
 </div>
+
 </div>
+
 </div>
 </section>
 
+<!-- SERVICES -->
+
 <section class="section alt" id="services">
 <div class="wrap">
+
 <div class="section-head">
 <div>
 <div class="eyebrow">05 / Professional Focus</div>
 <h2>Strategic expertise.<br>Operational perspective.</h2>
 </div>
-<p>Areas of professional focus for industrial organizations and high-risk operations.</p>
+
+<p>
+Areas of professional focus for industrial organizations and high-risk operations.
+</p>
 </div>
 
 <div class="service-list">
+
 <div class="service">
 <h3>HSE Strategy & Governance</h3>
-<p>Management systems, leadership accountability, HSE governance and performance improvement.</p>
-</div>
-<div class="service">
-<h3>Critical Risk Management</h3>
-<p>Major hazard thinking, critical controls, assurance and prevention of serious incidents.</p>
-</div>
-<div class="service">
-<h3>Predictive HSE & AI</h3>
-<p>Conceptual design of data-informed and AI-enabled approaches, with human oversight and responsible governance.</p>
-</div>
-<div class="service">
-<h3>Emergency & Crisis Resilience</h3>
-<p>Emergency preparedness, crisis management, organizational resilience and learning.</p>
-</div>
-<div class="service">
-<h3>HSE Framework & Documentation</h3>
-<p>Development of protocols, procedures, implementation roadmaps and specialist HSE documentation.</p>
-</div>
-<div class="service">
-<h3>Industrial HSE Advisory</h3>
-<p>Strategic and technical advisory for complex, high-risk industrial environments.</p>
-</div>
+<p>
+Management systems, leadership accountability, HSE governance and performance improvement.
+</p>
 </div>
 
-<p class="notice">The scope of any professional engagement is subject to mutual agreement, defined deliverables and formal contracting.</p>
+<div class="service">
+<h3>Critical Risk Management</h3>
+<p>
+Major hazard thinking, critical controls, assurance and prevention of serious incidents.
+</p>
+</div>
+
+<div class="service">
+<h3>Predictive HSE & AI</h3>
+<p>
+Conceptual design of data-informed and AI-enabled approaches, with human oversight and responsible governance.
+</p>
+</div>
+
+<div class="service">
+<h3>Emergency & Crisis Resilience</h3>
+<p>
+Emergency preparedness, crisis management, organizational resilience and learning.
+</p>
+</div>
+
+<div class="service">
+<h3>HSE Framework & Documentation</h3>
+<p>
+Development of protocols, procedures, implementation roadmaps and specialist HSE documentation.
+</p>
+</div>
+
+<div class="service">
+<h3>Industrial HSE Advisory</h3>
+<p>
+Strategic and technical advisory for complex, high-risk industrial environments.
+</p>
+</div>
+
+</div>
+
+<p class="notice">
+The scope of any professional engagement is subject to mutual agreement, defined deliverables and formal contracting.
+</p>
+
 </div>
 </section>
 
+<!-- PROJECTS -->
+
 <section class="section" id="projects">
 <div class="wrap">
+
 <div class="section-head">
 <div>
 <div class="eyebrow">06 / Selected Experience & Initiatives</div>
 <h2>Industrial context.<br>Systems perspective.</h2>
 </div>
-<p>Professional experience and developing initiatives across complex industrial and infrastructure settings.</p>
+
+<p>
+Professional experience and developing initiatives across complex industrial and infrastructure settings.
+</p>
 </div>
 
 <div class="grid">
+
 <article class="card">
 <div class="num">INDUSTRY</div>
 <h3>Steelmaking & DRI</h3>
-<p>HSE involvement in construction, commissioning and operation contexts associated with steelmaking furnaces and direct-reduction units.</p>
+<p>
+HSE involvement in construction, commissioning and operation contexts associated with steelmaking furnaces and direct-reduction units.
+</p>
 </article>
 
 <article class="card">
 <div class="num">INFRASTRUCTURE</div>
 <h3>Pipeline & Community HSE</h3>
-<p>Development of a community-based HSE concept for pipeline corridors, including risk awareness, participation and emergency readiness.</p>
+<p>
+Development of a community-based HSE concept for pipeline corridors, including risk awareness, participation and emergency readiness.
+</p>
 </article>
 
 <article class="card">
 <div class="num">STRATEGIC INITIATIVE</div>
 <h3>HSE 5.0 Framework</h3>
-<p>Ongoing development of the HSE 5.0 vision, global framework architecture and specialist knowledge documentation.</p>
+<p>
+Ongoing development of the HSE 5.0 vision, global framework architecture and specialist knowledge documentation.
+</p>
 </article>
+
 </div>
 
 <div class="project-note" style="margin-top:18px">
 Project descriptions on this website are concise summaries of professional experience or work in development. They do not imply current client relationships, project endorsement or independently verified project outcomes.
 </div>
+
 </div>
 </section>
 
+<!-- CONTACT -->
+
 <section class="section alt" id="contact">
 <div class="wrap">
+
 <div class="contactbox">
+
 <div>
 <div class="eyebrow">07 / Contact & Collaboration</div>
+
 <h2>Let's advance the future of safety.</h2>
-<p>For professional dialogue, publishing enquiries, speaking opportunities and potential collaboration related to HSE 5.0 and industrial safety.</p>
-<p class="notice">Official email and verified professional profile links will be added here once confirmed.</p>
+
+<p>
+For professional dialogue, publishing enquiries, speaking opportunities and potential collaboration related to HSE 5.0 and industrial safety.
+</p>
+
+<p class="notice">
+Official email and verified professional profile links will be added here once confirmed.
+</p>
 </div>
-<a class="btn primary" href="https://github.com/majidroshan4869-lgtm" target="_blank" rel="noopener noreferrer">GITHUB PROFILE ↗</a>
+
+<a class="btn primary"
+href="https://github.com/majidroshan4869-lgtm"
+target="_blank"
+rel="noopener noreferrer">
+GITHUB PROFILE ↗
+</a>
+
 </div>
 </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
+
 <footer>
 <div class="wrap footerrow">
-<span>© <span id="year">2026</span> Majid Roshan. All rights reserved.</span>
-<span>Founder & HSE 5.0 Visionary · <span class="green">From Reactive Safety to Predictive Safety</span></span>
+
+<span>
+© <span id="year">2026</span> Majid Roshan. All rights reserved.
+</span>
+
+<span>
+Founder & HSE 5.0 Visionary ·
+<span class="green">From Reactive Safety to Predictive Safety</span>
+</span>
+
 </div>
 </footer>
+
+<!-- JAVASCRIPT -->
 
 <script>
 (()=>{
@@ -505,6 +1075,7 @@ const btn=document.getElementById('menu-toggle');
 const nav=document.getElementById('site-nav');
 
 if(btn&&nav){
+
 const close=()=>{
 nav.classList.remove('open');
 btn.setAttribute('aria-expanded','false');
@@ -513,23 +1084,36 @@ btn.setAttribute('aria-label','Open navigation');
 
 btn.addEventListener('click',()=>{
 const open=!nav.classList.contains('open');
+
 nav.classList.toggle('open',open);
+
 btn.setAttribute('aria-expanded',String(open));
-btn.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+
+btn.setAttribute(
+'aria-label',
+open?'Close navigation':'Open navigation'
+);
 });
 
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+nav.querySelectorAll('a').forEach(a=>{
+a.addEventListener('click',close);
+});
 
 document.addEventListener('keydown',e=>{
 if(e.key==='Escape')close();
 });
 
 document.addEventListener('click',e=>{
-if(!nav.contains(e.target)&&!btn.contains(e.target))close();
+if(!nav.contains(e.target)&&!btn.contains(e.target)){
+close();
+}
 });
+
 }
 
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('year').textContent=
+new Date().getFullYear();
+
 })();
 </script>
 
